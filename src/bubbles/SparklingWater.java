@@ -21,25 +21,28 @@ public class SparklingWater extends Water {
        }
     }
 
-    public void degas(Bubble[] array) {
+    public void degas(Bubble[] bubbles) {
 
-
+        pump(bubbles);
 
         int i = 0;
-        int length = array.length;
+        int length = bubbles.length;
 
-        for (Bubble i1 : array) {
+        for (Bubble i1 : bubbles) {
 
-            for (int k = i; k < array.length - 1; k++) {
-                array[k] = array[k + 1];
+            for (int k = i; k < bubbles.length - 1; k++) {
+                bubbles[k] = bubbles[k + 1];
             }
             length--;
 
-            bubble.burstBubble();
-
-//            for (i = 0; i < length; i++)         //вывод элементов
-//                System.out.print(array[i] + " ");
-//            System.out.println("");
+        bubble.burstBubble();
         }
+    }
+
+    @Override
+    public String toString() {
+        return "SparklingWater{" +
+                "bubble=" + bubble +
+                '}';
     }
 }

@@ -8,7 +8,7 @@ public class Bottle {
 
     public Bottle(double volume) {
         this.volume = volume;
-        this.bubbles = new Bubble[(int) (5 * volume)];
+        this.bubbles = new Bubble[(int) (10000 * volume)];
     }
 
     public void open() {

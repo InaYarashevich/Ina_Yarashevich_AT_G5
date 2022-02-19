@@ -1,8 +1,5 @@
 package bubbles;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class SparklingWater extends Water {
 
     Bubble bubble = new Bubble();

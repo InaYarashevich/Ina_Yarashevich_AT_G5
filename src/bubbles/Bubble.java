@@ -22,4 +22,12 @@ public class Bubble {
     public void burstBubble(){
         System.out.print("Cramp!" + " ");
     }
+
+    @Override
+    public String toString() {
+        return "Bubble{" +
+                "bubbleVolume=" + bubbleVolume +
+                ", gasComposition='" + gasComposition + '\'' +
+                '}';
+    }
 }

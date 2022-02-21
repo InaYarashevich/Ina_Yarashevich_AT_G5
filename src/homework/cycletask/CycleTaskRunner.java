@@ -6,7 +6,6 @@ public class CycleTaskRunner {
         new WhileCycleTask().printNumbers();
         System.out.println();
         new ForTask().printNumbersFor();
-        new ArrayCreating();
         ArrayCreating.createArray(7);
         System.out.println();
         new ArrayPrinting().printArray();

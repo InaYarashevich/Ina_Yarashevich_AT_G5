@@ -6,6 +6,8 @@ public class ArrayCreating {
 
     private static final Random random = new Random();
 
+    private ArrayCreating(){}
+
     public static int[] createArray(int size) {
         int[] array = new int[size];
 

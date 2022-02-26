@@ -1,10 +1,10 @@
-package classwork.dayFour;
+package classwork.day4;
 
-public class Machinary {
+public abstract class Machinery {
 
     String name;
 
-    public Machinary(String name) {
+    public Machinery(String name) {
         this.name = name;
     }
 

@@ -2,46 +2,33 @@ package homework.bubbles;
 
 public class SparklingWater extends Water {
 
-    Bubble bubble = new Bubble();
+    private Bubble[] bubbles;
 
     public SparklingWater(String color, String clarity, String smell, double temperature) {
         super(color, clarity, smell, temperature);
-//            public void isOpened(){
-//        }
     }
 
     public SparklingWater() {
     }
 
-    public void pump(Bubble[] bubbles) {
-
-       for (int i = 0; i < bubbles.length; i++){
-           bubbles[i] = new Bubble("CO2");
-       }
+    public Bubble[] getBubbles() {
+        return bubbles;
     }
 
-    public void degas(Bubble[] bubbles) {
+    public void setBubbles(Bubble[] bubbles) {
+        this.bubbles = bubbles;
+    }
 
-        pump(bubbles);
-
-        int i = 0;
-        int length = bubbles.length;
-
-        for (Bubble i1 : bubbles) {
-
-            for (int k = i; k < bubbles.length - 1; k++) {
-                bubbles[k] = bubbles[k + 1];
-            }
-            length--;
-
-        bubble.burstBubble();
+    public void pump() {
+        for (int i = 0; i < this.bubbles.length; i++) {
+            this.bubbles[i] = new Bubble("CO2");
         }
     }
 
-    @Override
-    public String toString() {
-        return "SparklingWater{" +
-                "bubble=" + bubble +
-                '}';
+    public void degas() {
+        for (int i = 0; i < this.bubbles.length; i++) {
+            bubbles[i].burst();
+            bubbles[i] = null;
+        }
     }
 }

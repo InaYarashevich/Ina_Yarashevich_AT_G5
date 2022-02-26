@@ -1,8 +1,8 @@
-package classwork.dayFour;
+package classwork.day4;
 
-public class Bike extends Vehicle implements Movable {
+public class Bike extends Vehicle implements  Movable{
 
-    public Bike(int speed, String color) {
+    public Bike(int speed, String color){
         super(speed, color);
     }
 

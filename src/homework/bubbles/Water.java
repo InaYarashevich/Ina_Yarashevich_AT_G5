@@ -14,9 +14,7 @@ public abstract class Water {
         this.temperature = temperature;
     }
 
-    public Water() {
-
-    }
+    public Water() {}
 
     public String getColor() {
         return color;

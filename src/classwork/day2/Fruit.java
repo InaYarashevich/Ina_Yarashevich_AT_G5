@@ -1,4 +1,4 @@
-package classwork.dayTwo;
+package classwork.day2;
 
 public class Fruit {
 

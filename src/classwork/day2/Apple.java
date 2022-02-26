@@ -1,14 +1,13 @@
-package classwork.dayTwo;
+package classwork.day2;
 
-public class Apple extends Fruit{
+public class Apple extends Fruit {
 
     private String color;
     private String taste;
     private int weight;
 
     public Apple() {
-        super( 20, "Apple");
-
+        super(20, "Apple");
     }
 
     public Apple(String color, String taste, int weight, int sugar) {
@@ -44,12 +43,6 @@ public class Apple extends Fruit{
 
     @Override
     public String toString() {
-        return "Apple{" +
-                "color='" + color + '\'' +
-                ", taste='" + taste + '\'' +
-                ", weight=" + weight +
-                ", name='" + super.getName() + '\'' +
-                ", sugar='" + super.getSugar() + '\'' +
-                '}';
+        return "Apple{" + "color='" + color + '\'' + ", taste='" + taste + '\'' + ", weight=" + weight + ", name='" + super.getName() + '\'' + ", sugar='" + super.getSugar() + '\'' + '}';
     }
 }

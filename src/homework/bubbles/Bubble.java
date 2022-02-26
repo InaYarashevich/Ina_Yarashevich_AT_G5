@@ -2,32 +2,22 @@ package homework.bubbles;
 
 public class Bubble {
 
-    private double bubbleVolume = 0.3;
-    private String gasComposition;
+    public static final double VOLUME = 0.3;
+    private String gas;
 
-    public Bubble(){}
-
-    public Bubble(String gasComposition) {
-        this.gasComposition = gasComposition;
+    public Bubble(String gas) {
+        this.gas = gas;
     }
 
-    public String getGasComposition() {
-        return gasComposition;
+    public String getGas() {
+        return gas;
     }
 
-    public void setGasComposition(String gasComposition) {
-        this.gasComposition = gasComposition;
+    public void setGas(String gas) {
+        this.gas = gas;
     }
 
-    public void burstBubble(){
+    public void burst() {
         System.out.print("Cramp!" + " ");
-    }
-
-    @Override
-    public String toString() {
-        return "Bubble{" +
-                "bubbleVolume=" + bubbleVolume +
-                ", gasComposition='" + gasComposition + '\'' +
-                '}';
     }
 }

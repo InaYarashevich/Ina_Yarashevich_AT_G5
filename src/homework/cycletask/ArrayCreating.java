@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ArrayCreating {
 
-    private static final Random random = new Random();
+    private static final Random RANDOM = new Random();
 
     private ArrayCreating(){}
 
@@ -12,7 +12,7 @@ public class ArrayCreating {
         int[] array = new int[size];
 
         for (int i = 0; i < size; i++) {
-            array[i] = random.nextInt(100);
+            array[i] = RANDOM.nextInt(100);
         }
         return array;
     }

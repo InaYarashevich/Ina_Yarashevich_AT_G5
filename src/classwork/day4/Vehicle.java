@@ -1,6 +1,6 @@
-package classwork.dayFour;
+package classwork.day4;
 
-public abstract class Vehicle extends Machinary{
+public abstract class Vehicle extends Machinery {
 
     int speed;
     String color;

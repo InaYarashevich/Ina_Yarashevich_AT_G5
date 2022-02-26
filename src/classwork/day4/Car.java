@@ -1,4 +1,4 @@
-package classwork.dayFour;
+package classwork.day4;
 
 import java.util.Arrays;
 

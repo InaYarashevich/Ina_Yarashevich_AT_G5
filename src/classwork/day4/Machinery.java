@@ -2,7 +2,7 @@ package classwork.day4;
 
 public abstract class Machinery {
 
-    String name;
+    protected String name;
 
     public Machinery(String name) {
         this.name = name;

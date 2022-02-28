@@ -1,7 +1,5 @@
 package main.java.tasks.homework.arraytask;
 
-import main.java.tasks.homework.cycletask.ArrayCreating;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -10,14 +8,13 @@ public class ArrayTask {
 
     public void calculateSum(int n) {
 
-        int[] array = ArrayCreating.createArray(10);
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int sum = 0;
 
         for (int i = n; i < array.length; i += n) {
-
             sum += array[i];
-            System.out.println(sum);
         }
+        System.out.println(sum);
     }
 
     public void returnArray(int n) {
@@ -49,5 +46,13 @@ public class ArrayTask {
             }
         }
         System.out.println(sum);
+    }
+
+    public void drawCow() {
+        System.out.println(" ^__^");
+        System.out.println(" (oo)\\\\_______");
+        System.out.println("(__)\\ ) \\/\\  \\");
+        System.out.println("     ||----w |\\");
+        System.out.println("     ||     ||");
     }
 }

@@ -7,5 +7,6 @@ public class Runner {
         ArrayTask arrayTask = new ArrayTask();
 
         arrayTask.calculateSum(2);
+        arrayTask.returnArray(8);
     }
 }

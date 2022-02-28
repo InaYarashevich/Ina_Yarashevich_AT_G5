@@ -17,7 +17,7 @@ public class ArrayTask {
         System.out.println(sum);
     }
 
-    public void returnArray(int n) {
+ /*   public void returnArray(int n) {
 
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int[] array2 = new int[array.length];
@@ -30,7 +30,27 @@ public class ArrayTask {
         for (int i = array2.length - 1; i >= 0; i--) {
             System.out.print(array2[i] + " ");
         }
+    }*/
+
+    public void returnArray(int n) {
+
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] array2 = new int[array.length];
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > n) {
+                array2[i] = array[i];
+            }
+        }
+        for (int i = array2.length - 1; i >= 0; i--) {
+            if (array2[i] == 0){
+
+            }
+            System.out.print(array2[i] + " ");
+        }
     }
+
+
 
     public void calculateSumElem() {
 

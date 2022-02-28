@@ -1,6 +1,7 @@
 package main.java.tasks.homework.cycletask;
 
 public class ArrayMinValue {
+
     private int[] array = ArrayCreating.createArray(7);
 
     public void findMin() {

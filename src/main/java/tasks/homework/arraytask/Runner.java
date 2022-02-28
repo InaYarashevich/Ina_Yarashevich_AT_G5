@@ -8,5 +8,7 @@ public class Runner {
 
         arrayTask.calculateSum(2);
         arrayTask.returnArray(8);
+        System.out.println();
+        arrayTask.calculateSumElem();
     }
 }

@@ -18,6 +18,10 @@ public class Bottle {
         sparklingWater.degas();
     }
 
+    public void isOpened(boolean isOpened) {
+        this.sparklingWater.setOpened(isOpened);
+    }
+
     public void warm(int temperature) {
         this.sparklingWater.setTemperature(temperature);
     }

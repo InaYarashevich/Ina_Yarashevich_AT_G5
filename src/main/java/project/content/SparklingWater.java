@@ -4,7 +4,7 @@ public class SparklingWater extends Water {
 
     private Bubble[] bubbles;
 
-    public SparklingWater(String color, String clarity, String smell, double temperature) {
+    public SparklingWater(String color, String clarity, String smell, int temperature) {
         super(color, clarity, smell, temperature);
     }
 
@@ -30,5 +30,8 @@ public class SparklingWater extends Water {
             bubbles[i].burst();
             bubbles[i] = null;
         }
+    }
+
+    public void setOpened(boolean isOpened) {
     }
 }

@@ -28,7 +28,7 @@ public abstract class Water {
         return transparency;
     }
 
-    public void setTransparency(String clarity) {
+    public void setTransparency(String transparency) {
         this.transparency = transparency;
     }
 

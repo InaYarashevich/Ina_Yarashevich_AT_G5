@@ -2,14 +2,14 @@ package main.java.project.content;
 
 public abstract class Water {
 
-    private String color;
-    private String clarity;
-    private String smell;
-    private int temperature;
+    private String color = "no";
+    private String transparency = "transparent";
+    private String smell = "no";
+    private int temperature = 0;
 
-    public Water(String color, String clarity, String smell, int temperature) {
+    public Water(String color, String transparency, String smell, int temperature) {
         this.color = color;
-        this.clarity = clarity;
+        this.transparency = transparency;
         this.smell = smell;
         this.temperature = temperature;
     }
@@ -24,12 +24,12 @@ public abstract class Water {
         this.color = color;
     }
 
-    public String getClarity() {
-        return clarity;
+    public String getTransparency() {
+        return transparency;
     }
 
-    public void setClarity(String clarity) {
-        this.clarity = clarity;
+    public void setTransparency(String clarity) {
+        this.transparency = transparency;
     }
 
     public String getSmell() {
@@ -45,6 +45,6 @@ public abstract class Water {
     }
 
     public void setTemperature(int temperature) {
-        this.temperature = this.temperature;
+        this.temperature = temperature;
     }
 }

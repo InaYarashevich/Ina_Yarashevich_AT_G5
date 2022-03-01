@@ -14,7 +14,27 @@ public class Bottle {
         this.sparklingWater.pump();
     }
 
-    public void open() {
-        sparklingWater.degas();
+    public void isOpened(boolean isOpened) {
+        this.sparklingWater.setOpened(isOpened);
+    }
+
+    public void warm(int temperature) {
+        this.sparklingWater.setTemperature(temperature);
+    }
+
+    public double getVolume() {
+        return volume;
+    }
+
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
+
+    public SparklingWater getSparklingWater() {
+        return sparklingWater;
+    }
+
+    public void setSparklingWater(SparklingWater sparklingWater) {
+        this.sparklingWater = sparklingWater;
     }
 }

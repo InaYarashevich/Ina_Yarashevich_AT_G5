@@ -2,21 +2,16 @@ package main.java.project.content;
 
 public class SparklingWater extends Water {
 
+    private boolean isOpened;
     private Bubble[] bubbles;
 
-    public SparklingWater(String color, String clarity, String smell, double temperature) {
-        super(color, clarity, smell, temperature);
+    public SparklingWater(String color, String transparency, String smell, int temperature) throws InterruptedException {
+        super(color, transparency, smell, temperature);
+        isOpened();
     }
 
     public SparklingWater() {
-    }
 
-    public Bubble[] getBubbles() {
-        return bubbles;
-    }
-
-    public void setBubbles(Bubble[] bubbles) {
-        this.bubbles = bubbles;
     }
 
     public void pump() {
@@ -25,10 +20,33 @@ public class SparklingWater extends Water {
         }
     }
 
-    public void degas() {
+    public void setOpened(boolean isOpened) {
+        this.isOpened = isOpened;
+    }
+
+    private void isOpened() throws InterruptedException {
+        if (isOpened){
+            degas();
+        }
+    }
+
+    private void degas() throws InterruptedException {
         for (int i = 0; i < this.bubbles.length; i++) {
-            bubbles[i].burst();
+            bubbles[i].cramp();
             bubbles[i] = null;
         }
+        Thread.sleep(1000);
+    }
+
+    public boolean isSparkle(){
+        
+    }
+
+    public Bubble[] getBubbles() {
+        return bubbles;
+    }
+
+    public void setBubbles(Bubble[] bubbles) {
+        this.bubbles = bubbles;
     }
 }

@@ -2,22 +2,18 @@ package main.java.project.content;
 
 public class Bubble {
 
-    public static final double VOLUME = 0.3;
+    private double volume = 0.3;
     private String gas;
 
     public Bubble(String gas) {
         this.gas = gas;
     }
 
-    public String getGas() {
-        return gas;
-    }
-
-    public void setGas(String gas) {
-        this.gas = gas;
-    }
-
-    public void burst() {
+    public void cramp() {
         System.out.print("Cramp!" + " ");
+    }
+
+    public double getVolume() {
+        return volume;
     }
 }

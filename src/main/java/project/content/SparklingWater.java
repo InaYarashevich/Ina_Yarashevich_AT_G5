@@ -38,9 +38,9 @@ public class SparklingWater extends Water {
         Thread.sleep(1000);
     }
 
-    public boolean isSparkle(){
-        
-    }
+//    public boolean isSparkle(){
+//
+//    }
 
     public Bubble[] getBubbles() {
         return bubbles;

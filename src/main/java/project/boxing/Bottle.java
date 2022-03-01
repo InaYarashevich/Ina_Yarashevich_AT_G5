@@ -14,10 +14,6 @@ public class Bottle {
         this.sparklingWater.pump();
     }
 
-    public void open() {
-        sparklingWater.degas();
-    }
-
     public void isOpened(boolean isOpened) {
         this.sparklingWater.setOpened(isOpened);
     }

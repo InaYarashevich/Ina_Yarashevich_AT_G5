@@ -9,8 +9,8 @@ public class Runner {
         Bottle bottle2 = new Bottle(1);
         Bottle bottle3 = new Bottle(1.5);
 
-        bottle.open();
-        bottle2.open();
-        bottle3.open();
+//        bottle.open();
+//        bottle2.open();
+//        bottle3.open();
     }
 }

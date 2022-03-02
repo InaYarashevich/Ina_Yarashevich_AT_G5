@@ -44,7 +44,6 @@ public class ArrayTask {
         }
         for (int i = array2.length - 1; i >= 0; i--) {
             if (array2[i] == 0){
-
             }
             System.out.print(array2[i] + " ");
         }

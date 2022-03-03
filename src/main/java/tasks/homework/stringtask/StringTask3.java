@@ -1,8 +1,5 @@
 package main.java.tasks.homework.stringtask;
 
-import java.util.Arrays;
-import java.util.Objects;
-
 public class StringTask3 {
 
     public static void main(String[] args) {
@@ -14,7 +11,6 @@ public class StringTask3 {
         int failed_count = 0;
         String ip_address = null;
 
-
         for (String s : array) {
             if (s.contains("granted")) {
                 passed_count += 1;
@@ -24,10 +20,8 @@ public class StringTask3 {
             }
             if (s.matches("\\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\.|$)){4}\\b")) {
                 ip_address = s;
-
             }
         }
-
         System.out.println("ip " + ip_address + ": ok - " + passed_count + ", failed - " + failed_count);
     }
 }

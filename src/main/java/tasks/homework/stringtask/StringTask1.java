@@ -1,6 +1,5 @@
 package main.java.tasks.homework.stringtask;
 
-import java.util.Arrays;
 import java.util.Objects;
 
 public class StringTask1 {

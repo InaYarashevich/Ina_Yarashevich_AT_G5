@@ -40,7 +40,7 @@ public abstract class Water {
         this.smell = smell;
     }
 
-    public double getTemperature() {
+    public int getTemperature() {
         return temperature;
     }
 

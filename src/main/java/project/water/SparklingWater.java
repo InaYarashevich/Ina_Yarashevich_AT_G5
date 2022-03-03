@@ -29,7 +29,9 @@ public class SparklingWater extends Water {
     }
 
     private void degas() throws InterruptedException {
-        for (int i = 0; i < this.bubbles.length; i++) {
+
+        int bubbleNumber = 10 + 5 * this.getTemperature();
+        for (int i = 0; i < bubbleNumber; i++) {
             bubbles[i].cramp();
             bubbles[i] = null;
             Thread.sleep(1000);

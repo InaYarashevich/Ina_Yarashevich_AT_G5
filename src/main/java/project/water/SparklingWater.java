@@ -1,4 +1,4 @@
-package main.java.project.content;
+package main.java.project.water;
 
 public class SparklingWater extends Water {
 
@@ -7,14 +7,12 @@ public class SparklingWater extends Water {
 
     public SparklingWater(String color, String transparency, String smell, int temperature) throws InterruptedException {
         super(color, transparency, smell, temperature);
-        isOpened();
+        this.isOpened();
     }
 
-    public SparklingWater() {
+    public SparklingWater() {}
 
-    }
-
-    public void pump() {
+    public void pump(Bubble[] bubbles) {
         for (int i = 0; i < this.bubbles.length; i++) {
             this.bubbles[i] = new Bubble("CO2");
         }
@@ -34,13 +32,12 @@ public class SparklingWater extends Water {
         for (int i = 0; i < this.bubbles.length; i++) {
             bubbles[i].cramp();
             bubbles[i] = null;
+            Thread.sleep(1000);
         }
-        Thread.sleep(1000);
     }
 
-    public boolean isSparkle(){
-        
-    }
+  /*  public boolean isSparkle(){
+    }*/
 
     public Bubble[] getBubbles() {
         return bubbles;

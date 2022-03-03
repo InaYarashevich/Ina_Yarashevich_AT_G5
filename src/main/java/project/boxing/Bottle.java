@@ -1,7 +1,7 @@
 package main.java.project.boxing;
 
-import main.java.project.content.Bubble;
-import main.java.project.content.SparklingWater;
+import main.java.project.water.Bubble;
+import main.java.project.water.SparklingWater;
 
 public class Bottle {
 
@@ -11,15 +11,22 @@ public class Bottle {
     public Bottle(double volume) {
         this.volume = volume;
         this.sparklingWater.setBubbles(new Bubble[(int) (10000 * volume)]);
-        this.sparklingWater.pump();
     }
 
-    public void isOpened(boolean isOpened) {
-        this.sparklingWater.setOpened(isOpened);
+    public void open(){
+        this.sparklingWater.setOpened(true);
     }
 
     public void warm(int temperature) {
         this.sparklingWater.setTemperature(temperature);
+    }
+
+    public SparklingWater getWater(){
+        return new SparklingWater();
+    }
+
+    public void setWater(SparklingWater water){
+        this.sparklingWater = water;
     }
 
     public double getVolume() {
@@ -28,13 +35,5 @@ public class Bottle {
 
     public void setVolume(double volume) {
         this.volume = volume;
-    }
-
-    public SparklingWater getSparklingWater() {
-        return sparklingWater;
-    }
-
-    public void setSparklingWater(SparklingWater sparklingWater) {
-        this.sparklingWater = sparklingWater;
     }
 }

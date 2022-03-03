@@ -7,7 +7,7 @@ public class Runner {
         ArrayTask arrayTask = new ArrayTask();
 
         arrayTask.calculateSum(4);
-        arrayTask.returnArray(8);
+        arrayTask.returnArray(5);
         System.out.println();
         arrayTask.calculateSumElem();
         arrayTask.drawCow();

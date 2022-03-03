@@ -17,21 +17,6 @@ public class ArrayTask {
         System.out.println(sum);
     }
 
- /*   public void returnArray(int n) {
-
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] array2 = new int[array.length];
-
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > n) {
-                array2[i] = array[i];
-            }
-        }
-        for (int i = array2.length - 1; i >= 0; i--) {
-            System.out.print(array2[i] + " ");
-        }
-    }*/
-
     public void returnArray(int n) {
 
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
@@ -43,17 +28,15 @@ public class ArrayTask {
             }
         }
         for (int i = array2.length - 1; i >= 0; i--) {
-            if (array2[i] == 0){
+            if (array2[i] != 0) {
+               System.out.print(array2[i] + " ");
             }
-            System.out.print(array2[i] + " ");
         }
     }
 
-
-
     public void calculateSumElem() {
 
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 28, 56, 28};
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 3, 6, 3};
         int sum = 0;
         DateFormat dateFormat = new SimpleDateFormat("dd");
         String text = dateFormat.format(new Date());

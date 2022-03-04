@@ -3,7 +3,7 @@ package main.java.tasks.homework.stringtask;
 public class StringTask3 {
 
     public static void main(String[] args) {
-       String logs = "access_log.2020.09.07 212.168.101.5 granted\n" +
+        String logs = "access_log.2020.09.07 212.168.101.5 granted\n" +
                 "access_log.2020.09.07 212.168.101.6 denied";
 
         String[] array = logs.split(" ");
@@ -25,4 +25,3 @@ public class StringTask3 {
         System.out.println("ip " + ip_address + ": ok - " + passed_count + ", failed - " + failed_count);
     }
 }
-

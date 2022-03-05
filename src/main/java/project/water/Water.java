@@ -1,4 +1,4 @@
-package main.java.project.content;
+package main.java.project.water;
 
 public abstract class Water {
 
@@ -40,7 +40,7 @@ public abstract class Water {
         this.smell = smell;
     }
 
-    public double getTemperature() {
+    public int getTemperature() {
         return temperature;
     }
 

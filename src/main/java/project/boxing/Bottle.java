@@ -6,27 +6,31 @@ import main.java.project.water.SparklingWater;
 public class Bottle {
 
     private double volume;
-    SparklingWater sparklingWater = new SparklingWater();
+    SparklingWater water = new SparklingWater("no", "transparent", "no", 0);
 
-    public Bottle(double volume) {
+    public Bottle(double volume) throws InterruptedException {
         this.volume = volume;
-        this.sparklingWater.setBubbles(new Bubble[(int) (10000 * volume)]);
+        this.water.setBubbles(new Bubble[(int) (10000 * volume)]);
+        this.water.pump(getWater().getBubbles());
+        System.out.print("-Initializing the Bottle object-");
     }
 
-    public void open(){
-        this.sparklingWater.setOpened(true);
+    public void open() {
+        this.water.setOpened(true);
+        System.out.print("-Opening of the bottle-");
     }
 
     public void warm(int temperature) {
-        this.sparklingWater.setTemperature(temperature);
+        this.water.setTemperature(temperature);
+        System.out.printf("Warming water to: %s", temperature + " ").println();
     }
 
-    public SparklingWater getWater(){
-        return new SparklingWater();
+    public SparklingWater getWater() {
+        return water;
     }
 
-    public void setWater(SparklingWater water){
-        this.sparklingWater = water;
+    public void setWater(SparklingWater water) {
+        this.water = water;
     }
 
     public double getVolume() {
@@ -36,4 +40,5 @@ public class Bottle {
     public void setVolume(double volume) {
         this.volume = volume;
     }
+
 }

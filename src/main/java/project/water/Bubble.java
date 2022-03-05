@@ -7,13 +7,22 @@ public class Bubble {
 
     public Bubble(String gas) {
         this.gas = gas;
+        System.out.print("-Initializing bubble-");
     }
 
     public void cramp() {
         System.out.print("Cramp!" + " ");
+        System.out.print("Cramping the bubble ");
     }
 
     public double getVolume() {
         return volume;
+    }
+
+    @Override
+    public String toString() {
+        return "Bubble{" +
+                "gas='" + gas + '\'' +
+                '}';
     }
 }

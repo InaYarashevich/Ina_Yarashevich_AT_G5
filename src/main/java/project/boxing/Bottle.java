@@ -11,13 +11,16 @@ public class Bottle {
     public Bottle(double volume) throws InterruptedException {
         this.volume = volume;
         this.water.setBubbles(new Bubble[(int) (10000 * volume)]);
-        this.water.pump(getWater().getBubbles());
-        System.out.print("-Initializing the Bottle object-");
+        for (int i = 0; i < this.water.getBubbles().length; i++) {
+            this.water.getBubbles()[i] = new Bubble("CO2");
+        }
+        this.water.pump(water.getBubbles());
+        System.out.println("----" + this.water.isSparkle() + "----");
     }
 
     public void open() {
         this.water.setOpened(true);
-        System.out.print("-Opening of the bottle-");
+        System.out.print("Open the bottle ");
     }
 
     public void warm(int temperature) {

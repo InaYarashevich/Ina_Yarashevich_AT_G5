@@ -10,11 +10,11 @@ public class Bottle {
 
     public Bottle(double volume) throws InterruptedException {
         this.volume = volume;
-        this.water.setBubbles(new Bubble[(int) (10000 * volume)]);
+        Bubble[] bubbles = new Bubble[(int) (10000 * volume)];
         for (int i = 0; i < this.water.getBubbles().length; i++) {
-            this.water.getBubbles()[i] = new Bubble("CO2");
+            bubbles[i] = new Bubble("CO2");
         }
-        this.water.pump(water.getBubbles());
+        this.water.pump(bubbles);
         System.out.println("----" + this.water.isSparkle() + "----");
     }
 

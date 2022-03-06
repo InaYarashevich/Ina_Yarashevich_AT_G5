@@ -38,7 +38,7 @@ public class SparklingWater extends Water {
     }
 
     public boolean isSparkle() {
-        return bubbles == null;
+        return bubbles[bubbles.length - 1] == null;
     }
 
     public Bubble[] getBubbles() {

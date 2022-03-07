@@ -1,4 +1,4 @@
-package main.java.project.water;
+package main.java.project.water.content;
 
 public class Bubble {
 

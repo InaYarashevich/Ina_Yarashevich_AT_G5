@@ -4,8 +4,8 @@ import main.java.project.containable.Containable;
 import main.java.project.material.Material;
 import main.java.project.transformable.Transformable;
 import main.java.project.vessel.Vessel;
-import main.java.project.water.Bubble;
-import main.java.project.water.SparklingWater;
+import main.java.project.water.content.Bubble;
+import main.java.project.water.content.SparklingWater;
 
 public class Bottle extends Vessel implements Containable {
 

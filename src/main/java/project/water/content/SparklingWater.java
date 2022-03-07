@@ -1,4 +1,7 @@
-package main.java.project.water;
+package main.java.project.water.content;
+
+import main.java.project.water.Water;
+import main.java.project.water.content.Bubble;
 
 public class SparklingWater extends Water {
 
@@ -7,7 +10,7 @@ public class SparklingWater extends Water {
 
     public SparklingWater(String color, String transparency, String smell, int temperature) throws InterruptedException {
         super(color, transparency, smell, temperature);
-        this.isOpened();
+//        this.isOpened();
     }
 
     public void pump(Bubble[] bubbles) {
@@ -19,13 +22,25 @@ public class SparklingWater extends Water {
         System.out.print("Set the Bottle as Opened ");
     }
 
-    private void isOpened() throws InterruptedException {
-        if (isOpened) {
-            degas();
+    /*private void isOpened() {
+        Thread thread = run() {
+            while(!isOpened){
+                System.out.println("Bottle is closed.");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
+            try {
+                degas();
+            } catch (InterruptedException e){
+                e.printStackTrace();
+            }
         }
-        System.out.print("Run degas if Bottle is opened ");
+        thread.start();
     }
-
+*/
     private void degas() throws InterruptedException {
 
         int bubblesNumber = 10 + 5 * this.getTemperature();

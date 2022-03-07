@@ -1,6 +1,8 @@
 package main.java.project.water;
 
-public abstract class Water {
+import main.java.project.transformable.Transformable;
+
+public abstract class Water implements Transformable {
 
     private String color = "no";
     private String transparency = "transparent";
@@ -14,7 +16,8 @@ public abstract class Water {
         this.temperature = temperature;
     }
 
-    public Water() {}
+    public Water() {
+    }
 
     public String getColor() {
         return color;

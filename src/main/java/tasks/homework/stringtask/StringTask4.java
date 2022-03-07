@@ -13,7 +13,6 @@ public class StringTask4 {
         Date date = dateFormat.parse(dates);
         DateFormat dateFormat2 = new SimpleDateFormat("MMMM, d, y hh:mm");
         String newText = dateFormat2.format(date);
-
         System.out.println(newText);
     }
 }

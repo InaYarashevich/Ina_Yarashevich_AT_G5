@@ -1,9 +1,8 @@
 package main.java.tasks.homework.stringtask;
 
 import java.util.Arrays;
-import java.util.Objects;
 
-public class StringTask3 {
+public class IpAddress {
 
     public static void main(String[] args) {
         String logs = "access_log.2020.09.07 212.168.101.5 granted\n" +

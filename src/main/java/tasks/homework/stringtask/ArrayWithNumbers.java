@@ -1,6 +1,6 @@
 package main.java.tasks.homework.stringtask;
 
-public class StringTask2 {
+public class ArrayWithNumbers {
 
     public static void main(String[] args) {
 

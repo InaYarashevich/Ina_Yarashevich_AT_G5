@@ -2,7 +2,7 @@ package main.java.tasks.homework.stringtask;
 
 import java.util.Objects;
 
-public class StringTask1 {
+public class RemovingDuplicates {
 
     public static void main(String[] args) {
 
@@ -11,7 +11,7 @@ public class StringTask1 {
 
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length; j++) {
-                if (Objects.equals(array[i], array[j])) {
+                if (array[i].equals(array[j])) {
                     System.out.print(array[i] + " ");
                 }
             }

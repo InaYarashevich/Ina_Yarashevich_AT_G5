@@ -10,10 +10,12 @@ public class Runner {
         NextMonthPrinting nextMonthPrinting = new NextMonthPrinting();
         PrintingListOfFilesAndFolders filesFoldersList = new PrintingListOfFilesAndFolders();
         WordsCounting wordsCounting = new WordsCounting();
+        FilesWithRandomNumbers filesWithRandomNumbers = new FilesWithRandomNumbers();
 
    //     nextMonthPrinting.printNextMonth();
    //     filesFoldersList.read();
           wordsCounting.countWords();
+          filesWithRandomNumbers.inputRandomNumbers();
 
     }
 }

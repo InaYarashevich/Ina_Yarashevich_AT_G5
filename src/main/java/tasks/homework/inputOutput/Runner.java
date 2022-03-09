@@ -12,9 +12,5 @@ public class Runner {
         WordsCounting wordsCounting = new WordsCounting();
         FilesWithRandomNumbers filesWithRandomNumbers = new FilesWithRandomNumbers();
 
-        //     nextMonthPrinting.printNextMonth();
-        filesFoldersList.read();
-        //wordsCounting.countWords();
-        //filesWithRandomNumbers.inputRandomNumbers();
     }
 }

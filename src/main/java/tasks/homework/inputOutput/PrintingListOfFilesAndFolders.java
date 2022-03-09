@@ -7,7 +7,5 @@ public class PrintingListOfFilesAndFolders {
     public void read() throws IOException {
 
 
-
-
     }
 }

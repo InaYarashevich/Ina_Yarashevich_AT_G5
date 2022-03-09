@@ -13,7 +13,7 @@ public class Runner {
         FilesWithRandomNumbers filesWithRandomNumbers = new FilesWithRandomNumbers();
 
         //     nextMonthPrinting.printNextMonth();
-        //filesFoldersList.read();
+        filesFoldersList.read();
         wordsCounting.countWords();
         filesWithRandomNumbers.inputRandomNumbers();
     }

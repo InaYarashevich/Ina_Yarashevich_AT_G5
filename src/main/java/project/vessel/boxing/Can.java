@@ -11,6 +11,7 @@ public class Can extends Vessel implements Containable {
         super(volume, diameter, weight, material);
     }
 
+
     @Override
     public void addStuff(Transformable stuff) {
 

@@ -6,8 +6,6 @@ public class PrintingListOfFilesAndFolders {
 
     public void read() throws IOException {
 
-        BufferedReader in = new BufferedReader(new FileReader("\\Users\\IT0054\\Desktop\\*.*"));
 
-        in.lines();
     }
 }

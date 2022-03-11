@@ -17,12 +17,16 @@ public class FilesWithRandomNumbers {
                 new FileWriter("C:\\Users\\IT0054\\Ina_Yarashevich_AT_G5\\src\\main\\java\\tasks\\" +
                         "homework\\inputOutput\\folder1\\folder2\\folder3\\folder4\\file2.txt"));
 
+        int[] array = new int[10];
         Random randomInt = new Random();
+        for (int i = 0; i < array.length; ++i)
+            array[i] = randomInt.nextInt(20);
 
-        for (int i = 0; i < 10; i++){
-            outFile1.write(randomInt.nextInt(10));
+        for (int i = 0; i < array.length; i++){
+            String number = Integer.toString(array[i]);
+            outFile1.write(number);
             outFile1.newLine();
-            outFile2.write(randomInt.nextInt(10));
+            outFile2.write(number);
             outFile2.newLine();
         }
         outFile1.close();

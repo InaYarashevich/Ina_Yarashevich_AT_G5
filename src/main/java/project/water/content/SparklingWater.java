@@ -1,16 +1,16 @@
 package main.java.project.water.content;
 
 import main.java.project.water.Water;
-import main.java.project.water.content.Bubble;
 
-public class SparklingWater extends Water {
+public class SparklingWater extends Water implements  Runnable{
 
     private boolean isOpened;
     private Bubble[] bubbles;
 
+
     public SparklingWater(String color, String transparency, String smell, int temperature) throws InterruptedException {
         super(color, transparency, smell, temperature);
-//        this.isOpened();
+        this.isOpened();
     }
 
     public void pump(Bubble[] bubbles) {
@@ -22,25 +22,11 @@ public class SparklingWater extends Water {
         System.out.print("Set the Bottle as Opened ");
     }
 
-    /*private void isOpened() {
-        Thread thread = run() {
-            while(!isOpened){
-                System.out.println("Bottle is closed.");
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e){
-                    e.printStackTrace();
-                }
-            }
-            try {
-                degas();
-            } catch (InterruptedException e){
-                e.printStackTrace();
-            }
-        }
+    private void isOpened() {
+        Thread thread = new Thread();
         thread.start();
     }
-*/
+
     private void degas() throws InterruptedException {
 
         int bubblesNumber = 10 + 5 * this.getTemperature();
@@ -66,6 +52,26 @@ public class SparklingWater extends Water {
 
     @Override
     public void mix() {
+
+    }
+
+    @Override
+    public void run() {
+        {
+            while(!isOpened){
+                System.out.println("Bottle is closed.");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
+            try {
+                degas();
+            } catch (InterruptedException e){
+                e.printStackTrace();
+            }
+        }
 
     }
 }

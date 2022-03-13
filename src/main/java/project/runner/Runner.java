@@ -10,8 +10,8 @@ public class Runner {
        /* Bottle bottle2 = new Bottle(1);
         Bottle bottle3 = new Bottle(1.5);*/
 
-       /*  bottle.open();
-        System.out.println();
+        bottle.open();
+        /*System.out.println();
         bottle2.open();
         System.out.println();
         bottle3.open();*/

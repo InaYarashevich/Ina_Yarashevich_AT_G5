@@ -1,4 +1,4 @@
-package main.java.tasks.homework.arraylisttasks;
+package main.java.tasks.homework.collectionstasks;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

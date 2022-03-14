@@ -1,4 +1,4 @@
-package main.java.tasks.homework.arraylisttasks;
+package main.java.tasks.homework.collectionstasks;
 
 import java.util.Arrays;
 import java.util.List;

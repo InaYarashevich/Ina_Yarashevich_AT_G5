@@ -1,7 +1,7 @@
 package main.java.project.runner;
 
-import main.java.project.material.materials.Glass;
-import main.java.project.vessel.boxing.Bottle;
+import main.java.project.material.Glass;
+import main.java.project.vessel.Bottle;
 
 public class Runner {
     public static void main(String[] args) throws InterruptedException {

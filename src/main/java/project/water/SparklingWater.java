@@ -1,5 +1,6 @@
-package main.java.project.water.content;
+package main.java.project.water;
 
+import main.java.project.water.Bubble;
 import main.java.project.water.Water;
 
 public class SparklingWater extends Water implements  Runnable{

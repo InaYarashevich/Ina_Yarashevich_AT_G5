@@ -1,4 +1,4 @@
-package main.java.project.material.materials;
+package main.java.project.material;
 
 import main.java.project.material.Material;
 

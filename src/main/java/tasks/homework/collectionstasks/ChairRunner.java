@@ -1,5 +1,7 @@
 package main.java.tasks.homework.collectionstasks;
 
+import main.java.tasks.homework.classescreation.Chair;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -9,21 +11,21 @@ public class ChairRunner {
 
     public static void main(String[] args) {
 
-        List<Chair> chairs = Arrays.asList(
+        List<Chair> furniture = Arrays.asList(
                 new Chair(1, 2),
                 new Chair(4, 2),
                 new Chair(2, 4));
 
 
-        for (Chair chairType : chairs) {
+        for (Chair chairType : furniture) {
             System.out.print(chairType.getHeight() * chairType.getWidth() + " ");
         }
         System.out.println();
 
         Map<Integer, Chair> chairMap = new HashMap<>();
 
-        for (int i = 0; i < chairs.size(); i++) {
-            chairMap.put(i, chairs.get(i));
+        for (int i = 0; i < furniture.size(); i++) {
+            chairMap.put(i, furniture.get(i));
         }
 
         for (int key : chairMap.keySet()) {

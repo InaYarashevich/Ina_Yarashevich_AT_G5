@@ -1,5 +1,7 @@
 package main.java.tasks.homework.collectionstasks;
 
+import main.java.tasks.homework.classescreation.Sand;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,27 +16,27 @@ public class SandRunner {
         Sand sand3 = new Sand(2, "Карьерный");
         Sand sand4 = new Sand(7, "Речной");
 
-        List<Sand> sandTypes = new ArrayList<>();
+        List<Sand> sandbox = new ArrayList<>();
 
-        sandTypes.add(sand1);
-        sandTypes.add(sand2);
-        sandTypes.add(sand3);
-        sandTypes.add(sand4);
+        sandbox.add(sand1);
+        sandbox.add(sand2);
+        sandbox.add(sand3);
+        sandbox.add(sand4);
 
-        for (Sand sandType : sandTypes) {
+        for (Sand sandType : sandbox) {
             System.out.print(sandType.getWeight() + " ");
         }
         System.out.println();
 
-        for (Sand sandType : sandTypes) {
+        for (Sand sandType : sandbox) {
             System.out.print(sandType.getName() + " ");
         }
         System.out.println();
 
         Map<Integer, Sand> sandMap = new HashMap<>();
 
-        for (int i = 0; i < sandTypes.size(); i++) {
-            sandMap.put(i, sandTypes.get(i));
+        for (int i = 0; i < sandbox.size(); i++) {
+            sandMap.put(i, sandbox.get(i));
         }
 
         for (int key : sandMap.keySet()) {

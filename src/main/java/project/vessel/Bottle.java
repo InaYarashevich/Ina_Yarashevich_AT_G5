@@ -6,18 +6,22 @@ import main.java.project.transformable.Transformable;
 import main.java.project.water.Bubble;
 import main.java.project.water.SparklingWater;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Bottle extends Vessel implements Containable {
 
     private double volume;
     SparklingWater water = new SparklingWater("no", "transparent", "no", 0);
 
-    public Bottle(double volume, double diameter, int weight, Material material) throws InterruptedException {
+    public Bottle(double volume, double diameter, int weight, Material material) {
         super(volume, diameter, weight, material);
-        Bubble[] bubbles = new Bubble[(int) (10000 * volume)];
-        for (int i = 0; i < bubbles.length; i++) {
-            bubbles[i] = new Bubble("CO2");
+        List<Bubble> bubbles = new ArrayList<>();
+        for (int i = 0; i < 10000 * volume; i++) {
+            bubbles.add(new Bubble("CO2"));
         }
         this.water.pump(bubbles);
+        System.out.println("Bottle is pumped with sparkling water.");
     }
 
     public void warm(int temperature) {

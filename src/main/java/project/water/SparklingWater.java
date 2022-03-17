@@ -1,26 +1,24 @@
 package main.java.project.water;
 
-import main.java.project.water.Bubble;
-import main.java.project.water.Water;
+import java.util.List;
 
-public class SparklingWater extends Water implements  Runnable{
+public class SparklingWater extends Water implements Runnable {
 
     private boolean isOpened;
-    private Bubble[] bubbles;
+    private List<Bubble> bubbles;
 
-
-    public SparklingWater(String color, String transparency, String smell, int temperature) throws InterruptedException {
+    public SparklingWater(String color, String transparency, String smell, int temperature) {
         super(color, transparency, smell, temperature);
         this.isOpened();
     }
 
-    public void pump(Bubble[] bubbles) {
+    public void pump(List<Bubble> bubbles) {
         this.bubbles = bubbles;
     }
 
     public void setOpened(boolean isOpened) {
         this.isOpened = isOpened;
-        System.out.print("Set the Bottle as Opened ");
+        System.out.println("{isOpened == true}");
     }
 
     private void isOpened() {
@@ -32,22 +30,22 @@ public class SparklingWater extends Water implements  Runnable{
 
         int bubblesNumber = 10 + 5 * this.getTemperature();
         for (int i = 0; i < bubblesNumber; i++) {
-            bubbles[i].cramp();
-            bubbles[i] = null;
+            bubbles.get(i).cramp();
+            bubbles.remove(i);
         }
         Thread.sleep(1000);
-        System.out.print("Degas this sparkling water ");
+        System.out.println("Running degas.");
     }
 
     public boolean isSparkle() {
-        return bubbles[bubbles.length - 1] == null;
+        return bubbles.get(bubbles.size() - 1) == null;
     }
 
-    public Bubble[] getBubbles() {
+    public List<Bubble> getBubbles() {
         return bubbles;
     }
 
-    public void setBubbles(Bubble[] bubbles) {
+    public void setBubbles(List<Bubble> bubbles) {
         this.bubbles = bubbles;
     }
 
@@ -58,21 +56,20 @@ public class SparklingWater extends Water implements  Runnable{
 
     @Override
     public void run() {
-        {
-            while(!isOpened){
-                System.out.println("Bottle is closed.");
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e){
-                    e.printStackTrace();
-                }
-            }
+
+        while (!isOpened) {
+            System.out.println("Bottle is closed.");
             try {
-                degas();
-            } catch (InterruptedException e){
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+        try {
+            degas();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
 
+        }
     }
 }

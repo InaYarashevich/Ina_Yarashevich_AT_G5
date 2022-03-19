@@ -8,10 +8,8 @@ public class Figures {
     public static void main(String[] args) {
 
         List<String> figures = Arrays.asList("Овал", "Прямоугольник", "Круг", "Квадрат", "Эллипс");
-        String.join(",", figures);
 
-
-        System.out.println();
+        System.out.println(String.join(" - ", figures));
 
         int counter = 0;
         for (String figure : figures) {

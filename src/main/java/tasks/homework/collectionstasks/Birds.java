@@ -14,12 +14,19 @@ public class Birds {
         }
 
         int counter = 0;
+        int birdsCount = 0;
         for (String bird : birds) {
-            if (bird.matches("[аиеёоюуыэя\\p{IsCyrillic}]+")) {
+            if (bird.contains("а") || bird.contains("о") || bird.contains("у") ||
+                    bird.contains("э") || bird.contains("ю") || bird.contains("ы") ||
+                    bird.contains("ё") || bird.contains("я") || bird.contains("и") ||
+                    bird.contains("е")) {
                 counter++;
             }
+            if (counter > 1) {
+                birdsCount++;
+            }
         }
-        System.out.println(counter);
+        System.out.println(birdsCount);
 
         for (int i = 0; i < birds.size(); i++) {
             System.out.print(birds.get(i) + " ");

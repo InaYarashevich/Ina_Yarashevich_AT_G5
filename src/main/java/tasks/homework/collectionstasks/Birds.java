@@ -16,7 +16,7 @@ public class Birds {
         int counter = 0;
         for (String bird : birds) {
             String s = bird.replaceAll("[^ёеуэоаыяию]", "");
-            if (s.length() > 1){
+            if (s.length() > 1) {
                 counter++;
             }
         }

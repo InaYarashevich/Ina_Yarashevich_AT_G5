@@ -14,10 +14,7 @@ public class Countries {
         countries.add("Англия");
         countries.add("Замбия");
 
-        for (String country : countries) {
-            System.out.print(country + ", ");
-        }
-        System.out.println();
+        System.out.println(String.join(", ", countries));
 
         int counter = 0;
         for (String country : countries) {

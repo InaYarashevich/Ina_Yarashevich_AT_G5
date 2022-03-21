@@ -3,7 +3,7 @@ package main.java.tasks.classwork.day10;
 import java.util.Arrays;
 import java.util.List;
 
-public class SummingintDemo {
+public class Sum {
 
     public static void main(String[] args) {
 

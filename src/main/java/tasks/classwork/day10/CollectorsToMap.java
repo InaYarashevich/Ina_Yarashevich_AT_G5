@@ -2,10 +2,9 @@ package main.java.tasks.classwork.day10;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
-public class CollectorsPeople {
+public class CollectorsToMap {
 
     public static void main(String[] args) {
 

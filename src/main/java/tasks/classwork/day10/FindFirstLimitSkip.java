@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Demo2 {
+public class FindFirstLimitSkip {
 
     public static void main(String[] args) {
 

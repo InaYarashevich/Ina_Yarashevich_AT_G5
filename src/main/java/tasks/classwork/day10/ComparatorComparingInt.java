@@ -1,10 +1,10 @@
 package main.java.tasks.classwork.day10;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public class CollectorsDemo {
+public class ComparatorComparingInt {
 
     public static void main(String[] args) {
 
@@ -16,9 +16,6 @@ public class CollectorsDemo {
                 new Person("Роман Петрович", 72, Person.Sex.MAN)
         );
 
-        people.stream()
-                .collect(Collectors.groupingBy(p -> p.sex))
-                .keySet()
-                .forEach(System.out::println);
+        System.out.println(people.stream().min(Comparator.comparingInt(Person::getAge)).get());
     }
 }

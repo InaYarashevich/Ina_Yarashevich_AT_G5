@@ -1,14 +1,15 @@
 package main.java.project.vessel;
 
-import main.java.project.containable.Containable;
 import main.java.project.material.Material;
-import main.java.project.transformable.Transformable;
-import main.java.project.vessel.Vessel;
+import main.java.project.stuff.Transformable;
 
 public class Can extends Vessel implements Containable {
 
+    private Transformable stuff;
+
     public Can(double volume, double diameter, int weight, Material material) {
         super(volume, diameter, weight, material);
+        this.setDiameter(10.0);
     }
 
 
@@ -39,6 +40,11 @@ public class Can extends Vessel implements Containable {
 
     @Override
     public void close() {
+
+    }
+
+    @Override
+    public void warm(int temperature) {
 
     }
 }

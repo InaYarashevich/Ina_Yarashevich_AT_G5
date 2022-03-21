@@ -12,7 +12,7 @@ public abstract class Vessel {
     public Vessel(double volume, double diameter, int weight, Material material) {
         this.volume = volume;
         this.diameter = diameter;
-        this.weight = weight;
+       // this.weight = density * volume / 4;
         this.material = material;
     }
 

@@ -1,6 +1,6 @@
-package main.java.project.containable;
+package main.java.project.vessel;
 
-import main.java.project.transformable.Transformable;
+import main.java.project.stuff.Transformable;
 
 public interface Containable {
 
@@ -15,4 +15,6 @@ public interface Containable {
     void open();
 
     void close();
+
+    public void warm(int temperature);
 }

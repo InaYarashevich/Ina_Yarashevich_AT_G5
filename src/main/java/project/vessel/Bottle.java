@@ -1,10 +1,9 @@
 package main.java.project.vessel;
 
-import main.java.project.containable.Containable;
 import main.java.project.material.Material;
-import main.java.project.transformable.Transformable;
-import main.java.project.water.Bubble;
-import main.java.project.water.SparklingWater;
+import main.java.project.stuff.Transformable;
+import main.java.project.stuff.Bubble;
+import main.java.project.stuff.SparklingWater;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,10 +11,12 @@ import java.util.List;
 public class Bottle extends Vessel implements Containable {
 
     private double volume;
+    private Transformable stuff;
     SparklingWater water = new SparklingWater("no", "transparent", "no", 0);
 
     public Bottle(double volume, double diameter, int weight, Material material) {
         super(volume, diameter, weight, material);
+        this.setDiameter(2.0);
         List<Bubble> bubbles = new ArrayList<>();
         for (int i = 0; i < 10000 * volume; i++) {
             bubbles.add(new Bubble("CO2"));

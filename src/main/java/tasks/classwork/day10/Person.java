@@ -31,6 +31,15 @@ public class Person {
     public enum Sex{
         MAN, WOMEN
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                '}';
+    }
 }
 
 

@@ -1,9 +1,9 @@
-package main.java.project.water;
+package main.java.project.stuff;
 
 public class Bubble {
 
-    private double volume = 0.3;
-    private String gas = "CO2";
+    public static final double VOLUME = 03;
+    private String gas;
 
     public Bubble(String gas) {
         this.gas = gas;
@@ -15,7 +15,7 @@ public class Bubble {
     }
 
     public double getVolume() {
-        return volume;
+        return VOLUME;
     }
 
     @Override

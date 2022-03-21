@@ -1,4 +1,4 @@
-package main.java.project.water;
+package main.java.project.stuff;
 
 import java.util.List;
 

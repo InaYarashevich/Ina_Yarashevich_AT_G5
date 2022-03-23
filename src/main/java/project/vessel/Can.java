@@ -8,7 +8,7 @@ public class Can extends Vessel implements Containable {
     private Transformable stuff;
 
     public Can(double volume, double diameter, int weight, Material material) {
-        super(volume, diameter, weight, material);
+        super(volume, diameter, material);
         this.setDiameter(10.0);
     }
 

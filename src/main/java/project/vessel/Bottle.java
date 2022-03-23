@@ -15,7 +15,7 @@ public class Bottle extends Vessel implements Containable {
     SparklingWater water = new SparklingWater("no", "transparent", "no", 0);
 
     public Bottle(double volume, double diameter, int weight, Material material) {
-        super(volume, diameter, weight, material);
+        super(volume, diameter, material);
         this.setDiameter(2.0);
         List<Bubble> bubbles = new ArrayList<>();
         for (int i = 0; i < 10000 * volume; i++) {

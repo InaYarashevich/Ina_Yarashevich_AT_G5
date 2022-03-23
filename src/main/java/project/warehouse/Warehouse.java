@@ -6,14 +6,19 @@ public class Warehouse {
 
     private Map<Integer, VesselBox> stock;
 
-    public void addBox(VesselBox box){};
+    public void addBox(VesselBox box){
+        for (int i = 0; i < stock.size(); i++) {
+            stock.put(i, stock.get(i));
+        };
+    };
 
-    void removeBox(){};
-/*
+    public void removeBox(){
+        for (int i = 0; i < stock.size(); i++) {
+            stock.remove(i, stock.get(i));
+        };
+    };
 
-    public VesselBox getBox(){
+   /* public VesselBox getBox(){
         return VesselBox;
-    }
-*/
-
+    }*/
 }

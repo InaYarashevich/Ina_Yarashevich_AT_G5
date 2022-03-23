@@ -2,7 +2,7 @@ package main.java.project.stuff;
 
 import java.util.List;
 
-public class SparklingWater extends Water implements Runnable {
+public class SparklingWater extends Water{
 
     private boolean isOpened;
     private List<Bubble> bubbles;
@@ -24,6 +24,19 @@ public class SparklingWater extends Water implements Runnable {
     private void isOpened() {
         Thread thread = new Thread();
         thread.start();
+        while (!isOpened) {
+            System.out.println("Bottle is closed.");
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        try {
+            degas();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     private void degas() throws InterruptedException {
@@ -47,29 +60,5 @@ public class SparklingWater extends Water implements Runnable {
 
     public void setBubbles(List<Bubble> bubbles) {
         this.bubbles = bubbles;
-    }
-
-    @Override
-    public void mix() {
-
-    }
-
-    @Override
-    public void run() {
-
-        while (!isOpened) {
-            System.out.println("Bottle is closed.");
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        try {
-            degas();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-
-        }
     }
 }

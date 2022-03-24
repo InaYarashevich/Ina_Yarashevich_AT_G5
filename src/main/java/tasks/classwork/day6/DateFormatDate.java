@@ -5,7 +5,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Demo2 {
+public class DateFormatDate {
 
     public static void main(String[] args) throws ParseException {
 

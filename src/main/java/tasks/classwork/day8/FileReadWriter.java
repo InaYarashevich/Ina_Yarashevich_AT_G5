@@ -2,7 +2,7 @@ package main.java.tasks.classwork.day8;
 
 import java.io.*;
 
-public class MyReadWriter {
+public class FileReadWriter {
 
     public void read() throws IOException {
 

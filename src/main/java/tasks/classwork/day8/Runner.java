@@ -6,7 +6,7 @@ public class Runner {
 
     public static void main(String[] args) throws IOException {
 
-        MyReadWriter myReadWriter = new MyReadWriter();
+        FileReadWriter myReadWriter = new FileReadWriter();
 
         myReadWriter.read();
         myReadWriter.write();

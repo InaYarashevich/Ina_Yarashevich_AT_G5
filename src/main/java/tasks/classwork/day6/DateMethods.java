@@ -1,6 +1,6 @@
 package main.java.tasks.classwork.day6;
 
-public class Demo {
+public class DateMethods {
 
     public static void main(String[] args) {
 

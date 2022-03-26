@@ -18,7 +18,7 @@ public class Warehouse {
         };
     };
 
-   /* public VesselBox getBox(){
-        return VesselBox;
+/*   public VesselBox getBox(){
+        return stock.get();
     }*/
 }

@@ -26,7 +26,7 @@ public class FileRead {
         Arrays.stream(myList.stream()
                         .skip(4)
                         .collect(Collectors.joining("<p>"))
-                        .split("Date log:"))
+                        .split("Date log:")).filter(s -> !s.equals(""))
                 .map(s -> s.substring(0, 20) + " " + date)
                 .forEach(System.out::println);
     }

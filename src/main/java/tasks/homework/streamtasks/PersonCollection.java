@@ -22,6 +22,6 @@ public class PersonCollection {
                 .limit(4)
                 .map(Person::getName)
                 .collect(Collectors.toList())
-                .forEach(System.out::println);
+                .forEach(System.out::println); 
     }
 }

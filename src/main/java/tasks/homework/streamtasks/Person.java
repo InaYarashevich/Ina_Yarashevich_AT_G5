@@ -1,7 +1,5 @@
 package main.java.tasks.homework.streamtasks;
 
-import java.util.stream.Stream;
-
 public class Person {
 
     private String name;

@@ -9,12 +9,14 @@ public class Warehouse {
     public void addBox(VesselBox box) {
         for (int i = 0; i < stock.size(); i++) {
             stock.put(i, stock.get(i));
+            Stocktaking.registerBox(stock.get(i));
         }
     }
 
     public void removeBox() {
         for (int i = 0; i < stock.size(); i++) {
             stock.remove(i, stock.get(i));
+            Stocktaking.disposeBox(stock.get(i));
         }
     }
 

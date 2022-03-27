@@ -7,11 +7,9 @@ public class Warehouse {
     private Map<Integer, VesselBox> stock;
 
     public void addBox(VesselBox box) {
-        for (int i = 0; i < stock.size(); i++) {
-            stock.put(i, stock.get(i));
-            Stocktaking.registerBox(stock.get(i));
+            stock.put(stock.size(), box);
+            Stocktaking.registerBox(box);
         }
-    }
 
     public void removeBox() {
         for (int i = 0; i < stock.size(); i++) {

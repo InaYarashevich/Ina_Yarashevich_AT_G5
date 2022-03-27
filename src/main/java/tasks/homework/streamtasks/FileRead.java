@@ -24,9 +24,11 @@ public class FileRead {
         in.close();
 
         Arrays.stream(myList.stream()
-                        .skip(4)
-                        .collect(Collectors.joining("<p>"))
-                        .split("Date log:")).filter(s -> !s.equals(""))
+                .skip(4)
+                .collect(Collectors.joining())
+                .split("<br>"))
+                .collect(Collectors.toList())
+                .stream().filter(s -> s.contains("Date log:"))
                 .map(s -> s.substring(0, 20) + " " + date)
                 .forEach(System.out::println);
     }

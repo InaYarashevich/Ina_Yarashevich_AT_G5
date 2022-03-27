@@ -22,8 +22,8 @@ public class SparklingWater extends Water{
     }
 
     private void isOpened() {
-        Thread thread = new Thread();
-        thread.start();
+        Thread thread = new Thread(() -> {
+
         while (!isOpened) {
             System.out.println("Bottle is closed.");
             try {
@@ -36,7 +36,8 @@ public class SparklingWater extends Water{
             degas();
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }});
+        thread.start();
     }
 
     private void degas() throws InterruptedException {

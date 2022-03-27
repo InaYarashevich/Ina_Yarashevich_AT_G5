@@ -12,9 +12,9 @@ public class Bottle extends Vessel implements Containable {
 
     private double volume;
     private Transformable stuff;
-    SparklingWater water = new SparklingWater("no", "transparent", "no", 0);
+    SparklingWater water = new SparklingWater("no", "transparent", "no", 5);
 
-    public Bottle(double volume, double diameter, int weight, Material material) {
+    public Bottle(double volume, double diameter, Material material) {
         super(volume, diameter, material);
         this.setDiameter(2.0);
         List<Bubble> bubbles = new ArrayList<>();

@@ -11,7 +11,6 @@ public class Bubble {
 
     public void cramp() {
         System.out.print("Cramp!" + " ");
-        System.out.print("Cramping the bubble ");
     }
 
     public double getVolume() {

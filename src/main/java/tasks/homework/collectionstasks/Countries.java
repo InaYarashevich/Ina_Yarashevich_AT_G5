@@ -18,6 +18,14 @@ public class Countries {
 
         int counter = 0;
         for (String country : countries) {
+            System.out.print(country);
+            if (counter++ < countries.size() - 1) {
+                System.out.print(", ");;
+            }
+        }
+        System.out.println();
+
+        for (String country : countries) {
             if (country.length() < 7) {
                 counter++;
             }

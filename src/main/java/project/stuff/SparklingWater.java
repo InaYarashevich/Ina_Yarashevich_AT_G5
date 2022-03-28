@@ -7,6 +7,7 @@ public class SparklingWater extends Water{
     private boolean isOpened;
     private List<Bubble> bubbles;
 
+
     public SparklingWater(String color, String transparency, String smell, int temperature) {
         super(color, transparency, smell, temperature);
         this.isOpened();

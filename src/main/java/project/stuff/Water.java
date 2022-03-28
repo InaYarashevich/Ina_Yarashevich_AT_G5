@@ -14,9 +14,6 @@ public abstract class Water implements Transformable {
         this.temperature = temperature;
     }
 
-    public Water() {
-    }
-
     public String getColor() {
         return color;
     }

@@ -35,7 +35,7 @@ public class Bottle extends Vessel implements Containable {
 
     @Override
     public void addStuff(Transformable stuff) {
-        this.sparklingWater = (SparklingWater) stuff;
+        this.stuff = stuff;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class Bottle extends Vessel implements Containable {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return stuff == null;
     }
 
     @Override

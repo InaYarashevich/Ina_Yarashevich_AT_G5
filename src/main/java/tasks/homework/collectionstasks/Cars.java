@@ -12,7 +12,7 @@ public class Cars {
 
         Set<String> cars = new HashSet<>();
         BufferedWriter output = new BufferedWriter(
-                new FileWriter("C:\\Users\\IT0054\\Ina_Yarashevich_AT_G5\\cars.txt"));
+                new FileWriter("C:\\Users\\IT0054\\folder1\\cars.txt"));
 
         cars.add("Мерс");
         cars.add("Ауди");

@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Stocktaking {
 
-    private static final Path FILE = Paths.get("logs.txt");
+    private static final Path FILE = Paths.get("C:\\Users\\IT0054\\folder1\\logs.txt");
     static BufferedWriter out = null;
     static BufferedReader in = null;
 

@@ -16,7 +16,7 @@ public class FileRead {
         List<String> myList = new ArrayList<>();
         Date date = new Date();
 
-        BufferedReader in = new BufferedReader(new FileReader("test.txt"));
+        BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\IT0054\\folder1\\test1.txt"));
         String line;
         while ((line = in.readLine()) != null) {
             myList.add(line);

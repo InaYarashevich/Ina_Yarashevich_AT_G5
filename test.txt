@@ -1,8 +1,0 @@
-<br>String String String String String String String String String String
-<br>Date log: String String String String String String String String String String
-<br>String String String String String String String String String String
-<br>Date log: String String String String String String String String String String
-<br>Date log: String String String String String String String String String String
-<br>String String String String String String String String String String
-<br>String String String String String String String String String String
-<br>Date log: String String String String String String String String String String

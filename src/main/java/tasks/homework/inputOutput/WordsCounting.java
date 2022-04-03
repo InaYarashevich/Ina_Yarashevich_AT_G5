@@ -8,7 +8,7 @@ public class WordsCounting {
 
     public void countWords() throws IOException {
 
-        BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\IT0054\\folder1\\test.txt"));
+        BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\IT0054\\folder1\\test1.txt"));
         String line = in.readLine();
         String wordsLine = line.replaceAll("[^a-zA-Z]", " ").trim();
         String removedLetters = line.replaceAll("[a-zA-Z]", "").trim();

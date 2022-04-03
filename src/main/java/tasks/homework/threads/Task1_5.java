@@ -13,20 +13,146 @@ public class Task1_5 {
                 .map(Mouse::new)
                 .collect(Collectors.toList());
 
-        new Thread(() -> {
-            for (int i = 0; i < 7; i++) {
+        Thread t1 = new Thread(() -> {
+
+            synchronized (mouseList) {
                 System.out.println(Thread.currentThread().getName());
-                for (int k = 0; k < mouseList.size(); k++) {
-                    if (mouseList.indexOf(k) % 2 != 0) {
-                        mouseList.remove(k).peep();
+                mouseList.forEach(mouse -> {
+                    for (int i = 0; i < mouseList.size(); i++) {
+                        if (mouseList.indexOf(i) % 2 != 0) {
+                            mouseList.get(i).peep();
+                            mouseList.remove(i);
+                        }
                     }
-                }
-                try {
-                    Thread.sleep(250);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                });
             }
-        }).start();
+            try {
+                Thread.sleep(250);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread t2 = new Thread(() -> {
+            synchronized (mouseList) {
+                System.out.println(Thread.currentThread().getName());
+                mouseList.forEach(mouse -> {
+                    for (int i = 0; i < mouseList.size(); i++) {
+                        if (mouseList.indexOf(i) % 2 != 0) {
+                            mouseList.get(i).peep();
+                            mouseList.remove(i);
+                        }
+                    }
+                });
+            }
+            try {
+                Thread.sleep(250);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread t3 = new Thread(() -> {
+            synchronized (mouseList) {
+                System.out.println(Thread.currentThread().getName());
+                mouseList.forEach(mouse -> {
+                    for (int i = 0; i < mouseList.size(); i++) {
+                        if (mouseList.indexOf(i) % 2 != 0) {
+                            mouseList.get(i).peep();
+                            mouseList.remove(i);
+                        }
+                    }
+                });
+            }
+            try {
+                Thread.sleep(250);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread t4 = new Thread(() -> {
+            synchronized (mouseList) {
+                System.out.println(Thread.currentThread().getName());
+                mouseList.forEach(mouse -> {
+                    for (int i = 0; i < mouseList.size(); i++) {
+                        if (mouseList.indexOf(i) % 2 != 0) {
+                            mouseList.get(i).peep();
+                            mouseList.remove(i);
+                        }
+                    }
+                });
+            }
+            try {
+                Thread.sleep(250);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread t5 = new Thread(() -> {
+            synchronized (mouseList) {
+                System.out.println(Thread.currentThread().getName());
+                mouseList.forEach(mouse -> {
+                    for (int i = 0; i < mouseList.size(); i++) {
+                        if (mouseList.indexOf(i) % 2 != 0) {
+                            mouseList.get(i).peep();
+                            mouseList.remove(i);
+                        }
+                    }
+                });
+            }
+            try {
+                Thread.sleep(250);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread t6 = new Thread(() -> {
+            synchronized (mouseList) {
+                System.out.println(Thread.currentThread().getName());
+                mouseList.forEach(mouse -> {
+                    for (int i = 0; i < mouseList.size(); i++) {
+                        if (mouseList.indexOf(i) % 2 != 0) {
+                            mouseList.get(i).peep();
+                            mouseList.remove(i);
+                        }
+                    }
+                });
+            }
+            try {
+                Thread.sleep(250);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread t7 = new Thread(() -> {
+            synchronized (mouseList) {
+                System.out.println(Thread.currentThread().getName());
+                mouseList.forEach(mouse -> {
+                    for (int i = 0; i < mouseList.size(); i++) {
+                        if (mouseList.indexOf(i) % 2 != 0) {
+                            mouseList.get(i).peep();
+                            mouseList.remove(i);
+                        }
+                    }
+                });
+            }
+            try {
+                Thread.sleep(250);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
+        t5.start();
+        t6.start();
+        t7.start();
     }
 }

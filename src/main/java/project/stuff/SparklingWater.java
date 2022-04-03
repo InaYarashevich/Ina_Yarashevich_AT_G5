@@ -1,15 +1,23 @@
 package main.java.project.stuff;
 
+import main.java.project.vessel.Vessel;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class SparklingWater extends Water{
 
     private boolean isOpened;
     private List<Bubble> bubbles;
-
+    private Vessel vessel;
 
     public SparklingWater(String color, String transparency, String smell, int temperature) {
         super(color, transparency, smell, temperature);
+        List<Bubble> bubbles = new ArrayList<>();
+        for (int i = 0; i < 10000 * vessel.getVolume(); i++) {
+            bubbles.add(new Bubble("CO2"));
+        }
+        pump(bubbles);
         this.isOpened();
     }
 
@@ -19,7 +27,7 @@ public class SparklingWater extends Water{
 
     public void setOpened(boolean isOpened) {
         this.isOpened = isOpened;
-        System.out.println("{isOpened == true}");
+        System.out.println("Bottle is opened");
     }
 
     private void isOpened() {
@@ -43,7 +51,7 @@ public class SparklingWater extends Water{
 
     private void degas() throws InterruptedException {
 
-        int bubblesNumber = 10 + 5 * this.getTemperature();
+        int bubblesNumber = 10 + 5 * getTemperature();
         for (int i = 0; i < bubblesNumber; i++) {
             bubbles.get(i).cramp();
             bubbles.remove(i);

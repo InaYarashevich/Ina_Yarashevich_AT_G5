@@ -2,34 +2,20 @@ package main.java.project.vessel;
 
 import main.java.project.material.Material;
 import main.java.project.stuff.Transformable;
-import main.java.project.stuff.Bubble;
-import main.java.project.stuff.SparklingWater;
-import main.java.project.stuff.Water;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Bottle extends Vessel implements Containable {
 
     private double volume;
     private Transformable stuff;
 
-    SparklingWater sparklingWater = new SparklingWater("no", "transparent", "no", 5);
-
     public Bottle(double volume, double diameter, Material material) {
         super(volume, diameter, material);
         setDiameter(2.0);
-        List<Bubble> bubbles = new ArrayList<>();
-        for (int i = 0; i < 10000 * volume; i++) {
-            bubbles.add(new Bubble("CO2"));
-        }
-        sparklingWater.pump(bubbles);
-        System.out.println("Bottle is pumped with sparkling water.");
     }
 
     @Override
     public void warm(int temperature) {
-        sparklingWater.setTemperature(temperature);
+        stuff.setTemperature(temperature);
         System.out.printf("Warming water to: %s", temperature + " ").println();
     }
 
@@ -40,7 +26,7 @@ public class Bottle extends Vessel implements Containable {
 
     @Override
     public Transformable removeStuff() {
-        return null;
+        return stuff = null;
     }
 
     @Override
@@ -54,7 +40,7 @@ public class Bottle extends Vessel implements Containable {
     }
 
     public void open() {
-        sparklingWater.setOpened(true);
+        stuff.setOpened(true);
         System.out.print("Open the bottle ");
     }
 

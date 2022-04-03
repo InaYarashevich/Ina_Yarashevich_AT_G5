@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Task1_5 {
+public class Task1_6 {
 
     public static void main(String[] args) {
 
-        List<Mouse> mouseList = IntStream.rangeClosed(1, 380)
+        List<Mouse> mouseList = IntStream.rangeClosed(1, 420)
                 .boxed()
                 .map(Mouse::new)
                 .collect(Collectors.toList());
@@ -18,7 +18,7 @@ public class Task1_5 {
                 System.out.println(Thread.currentThread().getName());
                 mouseList.forEach(mouse -> {
                     for (int i = 0; i < mouseList.size(); i++) {
-                        if (mouseList.indexOf(i) % 2 != 0) {
+                        if (mouseList.indexOf(i) % 2 == 0) {
                             mouseList.get(i).peep();
                             mouseList.remove(i);
                         }
@@ -26,7 +26,7 @@ public class Task1_5 {
                 });
             }
             try {
-                Thread.sleep(250);
+                Thread.sleep(170);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -37,7 +37,7 @@ public class Task1_5 {
                 System.out.println(Thread.currentThread().getName());
                 mouseList.forEach(mouse -> {
                     for (int i = 0; i < mouseList.size(); i++) {
-                        if (mouseList.indexOf(i) % 2 != 0) {
+                        if (mouseList.indexOf(i) % 2 == 0) {
                             mouseList.get(i).peep();
                             mouseList.remove(i);
                         }
@@ -45,7 +45,7 @@ public class Task1_5 {
                 });
             }
             try {
-                Thread.sleep(250);
+                Thread.sleep(170);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -56,7 +56,7 @@ public class Task1_5 {
                 System.out.println(Thread.currentThread().getName());
                 mouseList.forEach(mouse -> {
                     for (int i = 0; i < mouseList.size(); i++) {
-                        if (mouseList.indexOf(i) % 2 != 0) {
+                        if (mouseList.indexOf(i) % 2 == 0) {
                             mouseList.get(i).peep();
                             mouseList.remove(i);
                         }
@@ -64,7 +64,7 @@ public class Task1_5 {
                 });
             }
             try {
-                Thread.sleep(250);
+                Thread.sleep(170);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -75,7 +75,7 @@ public class Task1_5 {
                 System.out.println(Thread.currentThread().getName());
                 mouseList.forEach(mouse -> {
                     for (int i = 0; i < mouseList.size(); i++) {
-                        if (mouseList.indexOf(i) % 2 != 0) {
+                        if (mouseList.indexOf(i) % 2 == 0) {
                             mouseList.get(i).peep();
                             mouseList.remove(i);
                         }
@@ -83,7 +83,7 @@ public class Task1_5 {
                 });
             }
             try {
-                Thread.sleep(250);
+                Thread.sleep(170);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -94,7 +94,7 @@ public class Task1_5 {
                 System.out.println(Thread.currentThread().getName());
                 mouseList.forEach(mouse -> {
                     for (int i = 0; i < mouseList.size(); i++) {
-                        if (mouseList.indexOf(i) % 2 != 0) {
+                        if (mouseList.indexOf(i) % 2 == 0) {
                             mouseList.get(i).peep();
                             mouseList.remove(i);
                         }
@@ -102,7 +102,7 @@ public class Task1_5 {
                 });
             }
             try {
-                Thread.sleep(250);
+                Thread.sleep(170);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -113,7 +113,7 @@ public class Task1_5 {
                 System.out.println(Thread.currentThread().getName());
                 mouseList.forEach(mouse -> {
                     for (int i = 0; i < mouseList.size(); i++) {
-                        if (mouseList.indexOf(i) % 2 != 0) {
+                        if (mouseList.indexOf(i) % 2 == 0) {
                             mouseList.get(i).peep();
                             mouseList.remove(i);
                         }
@@ -121,37 +121,17 @@ public class Task1_5 {
                 });
             }
             try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
-
-        Thread t7 = new Thread(() -> {
-            synchronized (mouseList) {
-                System.out.println(Thread.currentThread().getName());
-                mouseList.forEach(mouse -> {
-                    for (int i = 0; i < mouseList.size(); i++) {
-                        if (mouseList.indexOf(i) % 2 != 0) {
-                            mouseList.get(i).peep();
-                            mouseList.remove(i);
-                        }
-                    }
-                });
-            }
-            try {
-                Thread.sleep(250);
+                Thread.sleep(170);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         });
 
         t1.start();
-        t2.start();
-        t3.start();
-        t4.start();
-        t5.start();
-        t6.start();
-        t7.start();
+//        t2.start();
+//        t3.start();
+//        t4.start();
+//        t5.start();
+//        t6.start();
     }
 }

@@ -1,28 +1,16 @@
 package main.java.project.stuff;
 
-import main.java.project.vessel.Vessel;
-
-import java.util.ArrayList;
 import java.util.List;
 
-public class SparklingWater extends Water{
+public class SparklingWater extends Water {
 
     private boolean isOpened;
     private List<Bubble> bubbles;
-    private Vessel vessel;
 
-    public SparklingWater(String color, String transparency, String smell, int temperature) {
+    public SparklingWater(String color, String transparency, String smell, int temperature, List<Bubble> bubbles) {
         super(color, transparency, smell, temperature);
-        List<Bubble> bubbles = new ArrayList<>();
-        for (int i = 0; i < 10000 * vessel.getVolume(); i++) {
-            bubbles.add(new Bubble("CO2"));
-        }
-        pump(bubbles);
-        this.isOpened();
-    }
-
-    public void pump(List<Bubble> bubbles) {
         this.bubbles = bubbles;
+        this.isOpened();
     }
 
     public void setOpened(boolean isOpened) {
@@ -33,19 +21,20 @@ public class SparklingWater extends Water{
     private void isOpened() {
         Thread thread = new Thread(() -> {
 
-        while (!isOpened) {
-            System.out.println("Bottle is closed.");
+            while (!isOpened) {
+                System.out.println("Bottle is closed.");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
             try {
-                Thread.sleep(2000);
+                degas();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
-        try {
-            degas();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }});
+        });
         thread.start();
     }
 
@@ -70,5 +59,13 @@ public class SparklingWater extends Water{
 
     public void setBubbles(List<Bubble> bubbles) {
         this.bubbles = bubbles;
+    }
+
+    @Override
+    public String toString() {
+        return "SparklingWater{" +
+                "isOpened=" + isOpened +
+                ", bubbles=" + bubbles +
+                '}';
     }
 }

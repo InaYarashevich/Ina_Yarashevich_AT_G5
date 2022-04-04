@@ -1,6 +1,5 @@
 package main.java.tasks.homework.threads;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -88,6 +87,7 @@ public class Task1_5 {
             removeMouse();
             System.out.println("Thread finished: " + Thread.currentThread().getName());
         });
+
         Thread t7 = new Thread(() -> {
             System.out.println("Thread started: " + Thread.currentThread().getName());
             try {

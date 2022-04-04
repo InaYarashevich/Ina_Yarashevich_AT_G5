@@ -10,6 +10,10 @@ public class Mouse {
         this.name = "Mouse <" + number + ">";
     }
 
+    public void setPattern(int number){
+        this.pattern = "Mouse <" + number + ">";
+    }
+
     public void peep(){
         System.out.println(this.name + " PEEP!");
         try {

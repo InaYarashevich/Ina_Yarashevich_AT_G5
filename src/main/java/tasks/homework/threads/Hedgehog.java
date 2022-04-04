@@ -9,6 +9,10 @@ public class Hedgehog {
         this.name = "Hedgehog <" + number + ">";
     }
 
+    public void setPattern(int number){
+        this.pattern = "Hedgehog <" + number + ">";
+    }
+
     public void tellMe(){
         System.out.println("I am " + this.name + "!");
         try {

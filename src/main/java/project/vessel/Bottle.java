@@ -56,7 +56,7 @@ public class Bottle extends Vessel implements Containable {
 
     @Override
     public void close() {
-
+        stuff.setOpened(false);
     }
 
     public double getVolume() {

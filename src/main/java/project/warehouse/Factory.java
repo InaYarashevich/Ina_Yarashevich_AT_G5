@@ -4,6 +4,7 @@ import main.java.project.material.Material;
 import main.java.project.stuff.Transformable;
 import main.java.project.vessel.Bottle;
 import main.java.project.vessel.Containable;
+import main.java.project.vessel.Vessel;
 
 public class Factory {
 
@@ -18,11 +19,12 @@ public class Factory {
     }
 
     public void createVesselBox(int capacity, double volume, Material material, Transformable stuff, Class<?> clazz){
-        this.createVessel(1.2, Material.GLASS, stuff, Bottle.class);
+        createVessel(capacity, material, stuff, clazz);
     };
 
     private Containable createVessel(double volume, Material material, Transformable stuff, Class<?> clazz){
         return new Containable() {
+
             @Override
             public void addStuff(Transformable stuff) {
 
@@ -30,12 +32,12 @@ public class Factory {
 
             @Override
             public Transformable removeStuff() {
-                return null;
+                return stuff;
             }
 
             @Override
             public boolean isEmpty() {
-                return false;
+                return stuff == null;
             }
 
             @Override
@@ -45,17 +47,17 @@ public class Factory {
 
             @Override
             public void open() {
-
+                stuff.setOpened(true);
             }
 
             @Override
             public void close() {
-
+                stuff.setOpened(false);
             }
 
             @Override
             public void warm(int temperature) {
-
+                stuff.setTemperature(temperature);
             }
         };
     }

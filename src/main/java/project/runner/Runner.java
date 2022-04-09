@@ -12,7 +12,7 @@ import java.util.List;
 public class Runner {
     public static void main(String[] args) throws InterruptedException {
 
-        Bottle bottle = new Bottle(5, 0.05, Material.GLASS);
+        Bottle bottle = new Bottle(2, 0.05, Material.GLASS);
         bottle.setVolume(5);
 
         List<Bubble> bubbles = new ArrayList<>();

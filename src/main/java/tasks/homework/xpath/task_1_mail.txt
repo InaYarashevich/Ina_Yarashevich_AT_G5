@@ -1,0 +1,58 @@
+1. Mail.ru:
+//a[@href='https://trk.mail.ru/c/ds8xq6?mt_sub1=mail.ru']
+//a[contains(text(),'Mail.ru')]
+
+2. @mail:
+//a[@href='//mail.ru']
+//a[@title='Mail.ru: почта, поиск в интернете, новости, игры']
+
+3. Облако (whiteline):
+//a[contains(text(),'Облако')]
+//div[@id='ph-whiteline']//a[contains(text(),'Почта')]/following-sibling::a[1]
+
+4. Регистрация:
+//a[contains(text(),'Регистрация')]
+//button[contains(text(),'Войти')]/preceding-sibling::a
+
+5. Войти:
+//button[contains(text(),'Войти')]
+//a[contains(text(),'Регистрация')]/following-sibling::button
+
+6. Лупа в поле поиска:
+//input[@id='q']/following-sibling::label[1]
+//label[@id='search:clear']/preceding-sibling::label
+
+7. Найти:
+//button[@id='search:submit']
+//form[@id='search']/child::button
+//button[@data-testid='search-button']
+
+8. Почта:
+//div[@id='mailbox']//a[contains(text(),'Почта')]
+//a[@data-testid='logged-out-email']
+
+9. Леди:
+//a[@data-testid='news-tabs-tab-item-lady']
+//div[@data-testid='news-tabs']/a[contains(text(),'Леди')]
+//a[contains(text(),'Леди')]
+
+10. Вторая новость в списке:
+//ul[@data-testid='news-content']//li[2]
+//li[2][@data-testid="general-news-item-rb"]
+
+11. Войти
+//button[@data-testid="enter-mail-primary"]
+//div[@data-testid='logged-out-one-click']/button[text()='Войти']
+
+12. Создать почту:
+//a[@data-testid='mailbox-create-link']
+//div[@data-testid="logged-out-one-click"]/following-sibling::div/a
+
+13. Подробнее:
+//a[@data-testid='weather-city']/following-sibling::a
+//a[@href="https://pogoda.mail.ru/prognoz/minsk/" and contains(text(),'Подробнее')]
+
+14. Блок с погодой:
+город: //div[@data-testid='weather']//a[@data-testid='weather-city']
+картинка: //div[@data-testid='weather']//a[@href='https://pogoda.mail.ru/prognoz/minsk/']/img
+температура: //div[@data-testid='weather']//a[@href='https://pogoda.mail.ru/prognoz/minsk/']/span

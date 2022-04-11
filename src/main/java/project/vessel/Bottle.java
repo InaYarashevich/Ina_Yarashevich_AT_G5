@@ -8,7 +8,6 @@ import java.util.List;
 
 public class Bottle extends Vessel implements Containable {
 
-    private double volume;
     private Transformable stuff;
 
     public Bottle(double volume, double diameter, Material material) {
@@ -17,7 +16,7 @@ public class Bottle extends Vessel implements Containable {
     }
 
     public void pump(List<Bubble> bubbles){
-        for (int i = 0; i < 10000 * this.volume; i++) {
+        for (int i = 0; i < 10000 * getVolume(); i++) {
             bubbles.add(new Bubble("CO2"));
         }
         System.out.println("Pumping the bottle with Bubbles");
@@ -57,21 +56,5 @@ public class Bottle extends Vessel implements Containable {
     @Override
     public void close() {
         stuff.setOpened(false);
-    }
-
-    public double getVolume() {
-        return volume;
-    }
-
-    public void setVolume(double volume) {
-        this.volume = volume;
-    }
-
-    @Override
-    public String toString() {
-        return "Bottle{" +
-                "volume=" + volume +
-                ", stuff=" + stuff +
-                '}';
     }
 }

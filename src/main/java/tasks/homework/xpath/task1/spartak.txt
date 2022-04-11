@@ -1,0 +1,50 @@
+1. Спартак лого:
+//div[@class='header__logo']
+//img[@title='Спартак']/../..
+//div[@class='content_menu']/preceding-sibling::div
+
+2. Информация для партнеров:
+//div[@class="child submenu"]/../a[@href="/partners/"]
+//a[@href='/partners/' and @class='has_child']
+
+3. Лупа:
+//i[@class='search fa search-btn lupa']
+//div[@class='header__search']//i
+
+4. Глаз:
+//span[@class='header__eye']/a
+//img[@src='/include/eye.svg']/..
+
+5. Ru:
+//div[@class="header__lang"]/a[1]
+//a[contains(text(),'Ru')]
+//a[contains(@class, 'active') and text()='Ru']
+
+6. Ch:
+//a[contains(@class, 'header__lang__item') and text()='Ch']
+//a[@href='/cn/']
+
+7. Скачать каталог:
+//a[text()='Скачать каталог']
+//a[@class='download-catalog']
+//div[@id="select-lang"]/following-sibling::a
+
+8. Импрессо:
+//ul[@class="menu full"]//a[text()='Импрессо']
+//div[@class="lang-block"]/..//a[text()='Импрессо']
+
+9. Кнопка вправо:
+//a[@class='flex-next']
+//ul[@class='flex-direction-nav']/li[2]
+
+10. Пагинация:
+//ol[contains(@class, 'flex-control-paging')]/li[2]
+//ol[contains(@class, 'flex-control-paging')]/li/a[text()='2']
+
+11. VK:
+//div[@class="top_slider_wrapp"]//a[@href="https://vk.com/spartakby"]
+//div[@class="top_slider_wrapp"]//ul[@class="social_list"]/li[1]/a
+
+12. Youtube:
+//div[@class="top_slider_wrapp"]//a[@href="https://www.youtube.com/channel/UC2xYusMBxs4XkwoPotvTw4A"]
+//div[@class="top_slider_wrapp"]//ul[@class="social_list"]/li[5]/a

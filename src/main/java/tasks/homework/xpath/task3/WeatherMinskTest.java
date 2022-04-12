@@ -18,7 +18,8 @@ public class WeatherMinskTest {
         el.sendKeys(Keys.ARROW_DOWN);
         el.sendKeys(Keys.ENTER);
         driver.findElement(By.xpath("//div[@id='wob_dp']/div[@data-wob-di='1']")).click();
-        System.out.println(driver.findElement(By.xpath(
-                "//*[contains( normalize-space(@aria-label), '12:00') and contains(@aria-label,'Celsius')][1]")).getText());
+        System.out.println(driver
+                .findElement(By.xpath("//*[contains( normalize-space(@aria-label), '12:00') and contains(@aria-label,'Celsius')][1]"))
+                .getAttribute("aria-label"));
     }
 }

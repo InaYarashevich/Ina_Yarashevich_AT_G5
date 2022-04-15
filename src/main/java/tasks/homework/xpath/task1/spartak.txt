@@ -17,7 +17,7 @@
 
 5. Ru:
 //div[@class="header__lang"]/a[1]
-//a[contains(text(),'Ru')]
+//div[contains(./a/text(),'Ru')]
 //a[contains(@class, 'active') and text()='Ru']
 
 6. Ch:

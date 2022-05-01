@@ -9,30 +9,30 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class WeatherMinskTest {
-
     static WebDriver driver = new ChromeDriver();
 
     public static void main(String[] args) {
 
-        DateFormat dtf = new SimpleDateFormat("HH");
-        String now = dtf.format(new Date());
+        String currentDay = new SimpleDateFormat("EEEE", new Locale("be")).format(new Date());
+        System.out.println(currentDay);
 
         driver.get("https://google.com");
         driver.findElement(By.name("q")).sendKeys("погода Минск");
-        WebElement el = driver.findElement(By.xpath("//input[@title='Шукаць']"));
-        el.sendKeys(Keys.ARROW_DOWN);
-        el.sendKeys(Keys.ENTER);
-        driver.findElement(By.xpath("//div[@id='wob_dp']/div[@data-wob-di='1']")).click();
+        WebElement elementSearch = driver.findElement(By.xpath("//input[@title='Шукаць']"));
+        elementSearch.sendKeys(Keys.ARROW_DOWN);
+        elementSearch.sendKeys(Keys.ENTER);
+        driver.findElement(By.xpath("//div[@aria-label='" + currentDay + "']/../following-sibling::div[1]")).click();
 
-        if (Integer.parseInt(now) > 12) {
+        if (Integer.parseInt(currentDay) > 12) {
             System.out.println(driver
-                    .findElement(By.xpath("//*[contains( normalize-space(@aria-label), '12:00') and contains(@aria-label,'Celsius')][1]"))
+                    .findElement(By.xpath("//*[contains(normalize-space(@aria-label), '12:00') and contains(@aria-label,'Celsius')][1]"))
                     .getAttribute("aria-label"));
         } else {
             System.out.println(driver
-                    .findElement(By.xpath("//*[contains( normalize-space(@aria-label), '12:00') and contains(@aria-label,'Celsius')][2]"))
+                    .findElement(By.xpath("//*[contains(normalize-space(@aria-label), '12:00') and contains(@aria-label,'Celsius')][2]"))
                     .getAttribute("aria-label"));
         }
     }

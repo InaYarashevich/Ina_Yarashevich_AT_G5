@@ -88,7 +88,7 @@ public class BookingTest {
         String result = priceElement.getText().replaceAll("[^0-9]", "");
         int actualResult = Integer.parseInt(result);
 
-        Assert.assertTrue("The actual hotel price is less than the expected max price",actualResult >= 1600);
+        Assert.assertTrue("The actual hotel price is less than the expected max price",actualResult / 8 >= 1600);
         driver.quit();
     }
 }

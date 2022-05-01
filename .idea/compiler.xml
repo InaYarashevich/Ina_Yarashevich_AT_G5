@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Java_AT" options="" />
+      <module name="Java_AT" options="--add-exports java.base/sun.security.util=ALL-UNNAMED" />
     </option>
   </component>
 </project>

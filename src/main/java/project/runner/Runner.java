@@ -1,10 +1,10 @@
-package main.java.project.runner;
+package project.runner;
 
-import main.java.project.material.Material;
-import main.java.project.stuff.Bubble;
-import main.java.project.stuff.SparklingWater;
-import main.java.project.stuff.Water;
-import main.java.project.vessel.Bottle;
+import project.material.Material;
+import project.stuff.Bubble;
+import project.stuff.SparklingWater;
+import project.stuff.Water;
+import project.vessel.Bottle;
 
 import java.util.ArrayList;
 import java.util.List;

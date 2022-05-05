@@ -1,4 +1,4 @@
-package main.java.project.material;
+package project.material;
 
 public enum Material {
 

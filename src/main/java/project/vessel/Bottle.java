@@ -1,8 +1,8 @@
-package main.java.project.vessel;
+package project.vessel;
 
-import main.java.project.material.Material;
-import main.java.project.stuff.Bubble;
-import main.java.project.stuff.Transformable;
+import project.material.Material;
+import project.stuff.Bubble;
+import project.stuff.Transformable;
 
 import java.util.List;
 

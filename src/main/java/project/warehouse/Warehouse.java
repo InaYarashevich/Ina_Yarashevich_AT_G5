@@ -1,4 +1,4 @@
-package main.java.project.warehouse;
+package project.warehouse;
 
 import java.util.Map;
 

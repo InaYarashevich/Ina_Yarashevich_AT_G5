@@ -1,6 +1,6 @@
-package main.java.tasks.classwork.day2;
+package tasks.classwork.day2;
 
-public class Apple extends Fruit {
+public class Apple extends main.java.tasks.classwork.day2.Fruit {
 
     private String color;
     private String taste;

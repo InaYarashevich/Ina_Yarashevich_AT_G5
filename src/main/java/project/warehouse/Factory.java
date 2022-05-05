@@ -1,10 +1,8 @@
-package main.java.project.warehouse;
+package project.warehouse;
 
-import main.java.project.material.Material;
-import main.java.project.stuff.Transformable;
-import main.java.project.vessel.Bottle;
-import main.java.project.vessel.Containable;
-import main.java.project.vessel.Vessel;
+import project.material.Material;
+import project.stuff.Transformable;
+import project.vessel.Containable;
 
 public class Factory {
 

@@ -1,7 +1,7 @@
-package main.java.project.vessel;
+package project.vessel;
 
-import main.java.project.material.Material;
-import main.java.project.stuff.Transformable;
+import project.material.Material;
+import project.stuff.Transformable;
 
 public class Can extends Vessel implements Containable {
 
@@ -11,7 +11,6 @@ public class Can extends Vessel implements Containable {
         super(volume, diameter, material);
         this.setDiameter(10.0);
     }
-
 
     @Override
     public void addStuff(Transformable stuff) {

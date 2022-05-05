@@ -1,4 +1,4 @@
-package main.java.tasks.homework.arraytask;
+package tasks.homework.arraytask;
 
 public class Runner {
 

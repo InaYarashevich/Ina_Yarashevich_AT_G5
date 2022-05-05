@@ -1,6 +1,6 @@
-package main.java.tasks.homework.collectionstasks;
+package tasks.homework.collectionstasks;
 
-import main.java.tasks.homework.classescreation.Sand;
+import tasks.homework.classescreation.Sand;
 
 import java.util.ArrayList;
 import java.util.HashMap;

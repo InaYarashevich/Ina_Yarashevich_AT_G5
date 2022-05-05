@@ -1,4 +1,4 @@
-package main.java.tasks.homework.threads;
+package tasks.homework.threads;
 
 public class Hedgehog {
 

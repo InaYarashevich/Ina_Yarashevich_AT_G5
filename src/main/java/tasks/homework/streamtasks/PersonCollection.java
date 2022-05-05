@@ -1,4 +1,4 @@
-package main.java.tasks.homework.streamtasks;
+package tasks.homework.streamtasks;
 
 import java.io.IOException;
 import java.util.Comparator;

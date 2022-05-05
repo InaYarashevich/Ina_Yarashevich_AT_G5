@@ -1,4 +1,4 @@
-package main.java.tasks.homework.stringtask;
+package tasks.homework.stringtask;
 
 public class IpAddress {
 

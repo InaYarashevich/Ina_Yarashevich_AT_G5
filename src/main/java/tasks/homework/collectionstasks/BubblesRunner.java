@@ -1,6 +1,6 @@
-package main.java.tasks.homework.collectionstasks;
+package tasks.homework.collectionstasks;
 
-import main.java.tasks.homework.classescreation.Bubble;
+import tasks.homework.classescreation.Bubble;
 
 import java.util.Arrays;
 import java.util.List;

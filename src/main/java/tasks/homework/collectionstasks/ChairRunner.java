@@ -1,6 +1,6 @@
-package main.java.tasks.homework.collectionstasks;
+package tasks.homework.collectionstasks;
 
-import main.java.tasks.homework.classescreation.Chair;
+import tasks.homework.classescreation.Chair;
 
 import java.util.Arrays;
 import java.util.HashMap;

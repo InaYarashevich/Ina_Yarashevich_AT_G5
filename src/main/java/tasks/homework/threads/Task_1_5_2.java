@@ -1,4 +1,4 @@
-package main.java.tasks.homework.threads;
+package tasks.homework.threads;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package main.java.tasks.homework.classescreation;
+package tasks.homework.classescreation;
 
 import java.util.Objects;
 

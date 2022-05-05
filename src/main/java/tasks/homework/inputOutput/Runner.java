@@ -1,4 +1,4 @@
-package main.java.tasks.homework.inputOutput;
+package tasks.homework.inputOutput;
 
 import java.io.IOException;
 import java.text.ParseException;

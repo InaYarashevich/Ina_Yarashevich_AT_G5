@@ -1,4 +1,4 @@
-package main.java.tasks.homework.streamtasks;
+package tasks.homework.streamtasks;
 
 import java.util.Arrays;
 import java.util.List;

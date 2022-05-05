@@ -1,6 +1,6 @@
-package main.java.tasks.homework.collectionstasks;
+package tasks.homework.collectionstasks;
 
-import main.java.tasks.homework.classescreation.Person;
+import tasks.homework.classescreation.Person;
 
 import java.util.ArrayList;
 import java.util.List;

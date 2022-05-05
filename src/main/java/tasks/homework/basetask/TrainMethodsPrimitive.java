@@ -1,4 +1,4 @@
-package main.java.tasks.homework.basetask;
+package tasks.homework.basetask;
 
 public class TrainMethodsPrimitive {
 

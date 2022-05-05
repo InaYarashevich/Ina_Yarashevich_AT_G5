@@ -1,4 +1,4 @@
-package main.java.tasks.homework.arraytask;
+package tasks.homework.arraytask;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

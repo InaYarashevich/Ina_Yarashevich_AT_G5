@@ -1,4 +1,4 @@
-package main.java.tasks.classwork.day7;
+package tasks.classwork.day7;
 
 public class ObjectContainerRunner {
     public static void main(String[] args) {

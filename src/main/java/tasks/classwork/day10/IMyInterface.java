@@ -1,4 +1,4 @@
-package main.java.tasks.classwork.day10;
+package tasks.classwork.day10;
 
 import java.lang.FunctionalInterface;
 

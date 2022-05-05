@@ -1,4 +1,4 @@
-package main.java.tasks.classwork.day14;
+package tasks.classwork.day14;
 
 import org.junit.Test;
 import org.junit.Assert;

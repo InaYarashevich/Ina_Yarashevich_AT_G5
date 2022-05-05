@@ -1,4 +1,4 @@
-package main.java.tasks.classwork.people;
+package tasks.classwork.people;
 
 public abstract class Engineer extends Person {
 

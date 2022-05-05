@@ -1,4 +1,4 @@
-package main.java.tasks.classwork.day12;
+package tasks.classwork.day12;
 
 public class NewThread {
 

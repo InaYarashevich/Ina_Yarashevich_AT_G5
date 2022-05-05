@@ -1,6 +1,4 @@
-package main.java.tasks.classwork.day7;
-
-import java.security.PublicKey;
+package tasks.classwork.day7;
 
 public class ConstantContainer {
 

@@ -1,4 +1,4 @@
-package main.java.tasks.classwork.day2;
+package tasks.classwork.day2;
 
 public class Fruit {
 

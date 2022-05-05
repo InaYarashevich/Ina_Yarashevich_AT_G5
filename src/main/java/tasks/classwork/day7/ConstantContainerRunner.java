@@ -1,6 +1,4 @@
-package main.java.tasks.classwork.day7;
-
-import jdk.swing.interop.SwingInterOpUtils;
+package tasks.classwork.day7;
 
 public class ConstantContainerRunner {
 

@@ -1,6 +1,6 @@
-package main.java.tasks.classwork.day4;
+package tasks.classwork.day4;
 
-public class Bike extends Vehicle implements  Movable{
+public class Bike extends Vehicle implements Movable {
 
     public Bike(int speed, String color, String model, Wheel[] wheels){
         super(speed, color, model, wheels);

@@ -1,4 +1,4 @@
-package main.java.tasks.classwork.day13;
+package tasks.classwork.day13;
 
 public class NewClassLock {
 

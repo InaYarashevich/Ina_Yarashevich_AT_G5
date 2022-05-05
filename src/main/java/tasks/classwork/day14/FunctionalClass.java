@@ -1,4 +1,4 @@
-package main.java.tasks.classwork.day14;
+package tasks.classwork.day14;
 
 public class FunctionalClass {
 

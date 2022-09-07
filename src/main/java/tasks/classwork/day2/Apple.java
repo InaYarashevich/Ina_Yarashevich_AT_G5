@@ -1,17 +1,17 @@
 package tasks.classwork.day2;
 
-public class Apple extends main.java.tasks.classwork.day2.Fruit {
+public class Apple extends Fruit {
 
     private String color;
     private String taste;
     private int weight;
 
     public Apple() {
-        super(20, "Apple");
+        super();
     }
 
     public Apple(String color, String taste, int weight, int sugar) {
-        super(sugar, "Apple");
+        super();
         this.color = color;
         this.taste = taste;
         this.weight = weight;

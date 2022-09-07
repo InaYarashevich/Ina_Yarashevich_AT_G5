@@ -2,7 +2,7 @@ package tasks.classwork.day7;
 
 public class ObjectContainer {
 
-    Object[] container = new Object[10];
+    private Object[] container = new Object[10];
     private int counter;
 
     public void add(Object object) {

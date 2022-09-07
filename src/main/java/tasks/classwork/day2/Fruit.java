@@ -10,6 +10,10 @@ public class Fruit {
         this.name = name;
     }
 
+    public Fruit() {
+
+    }
+
     public int getSugar() {
         return sugar;
     }

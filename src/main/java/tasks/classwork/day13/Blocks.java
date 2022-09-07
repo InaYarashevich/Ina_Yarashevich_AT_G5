@@ -2,18 +2,16 @@ package tasks.classwork.day13;
 
 public class Blocks {
 
-    int x;
-    static int y;
-/*
+    private int x;
+    private static int y;
 
-     {
+    {
         method();
     }
 
-    public void method(){
+    public void method() {
         System.out.println("I am public static void method");
     }
-*/
 
     public int getX() {
         return x;
@@ -23,11 +21,11 @@ public class Blocks {
         this.x = x;
     }
 
-    public  int getY() {
+    public int getY() {
         return y;
     }
 
-    public  void setY(int y) {
+    public void setY(int y) {
         Blocks.y = y;
     }
 }
